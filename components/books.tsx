@@ -109,25 +109,8 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                       <path d="m6 9 6 6 6-6" />
                     </svg>
                   </TableHead>
-                  <TableHead className="cursor-pointer" onClick={() => onClick("start")}>
-                    Date Started{" "}
-                    <svg
-                      className=" h-5 w-5 text-gray-500 inline-block ml-2"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </TableHead>
                   <TableHead className="cursor-pointer" onClick={() => onClick("end")}>
-                    Date Finished{" "}
+                    Date{" "}
                     <svg
                       className=" h-5 w-5 text-gray-500 inline-block ml-2"
                       fill="none"
@@ -166,7 +149,6 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                     </TableCell>
                     <TableCell className="pl-4">{book.author}</TableCell>
                     <TableCell className="pl-4">{book.rating}/10</TableCell>
-                    <TableCell className="pl-4">{book.start.toDateString()}</TableCell>
                     <TableCell className="pl-4">{book.end.toDateString()}</TableCell>
                   </TableRow>
                 ))}
