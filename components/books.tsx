@@ -32,17 +32,34 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
           <div className="mb-6">
-            <h1 className="text-lg leading-6 font-medium text-gray-900">{"I'm currently reading these books:"}</h1>
-            <p className=" text-gray-700 mt-2">{bookshelf.current.map(book => `${book.title} by ${book.author}`).join(", ")}</p>
+            <h1 className="text-lg leading-6 font-medium text-gray-900">{"I'm currently reading"}</h1>
+            {bookshelf.current.map((book, index) => (
+              <div key={index} className="flex items-center mt-2 text-lg text-gray-700">
+                <Image
+                  alt={`${book.title} cover`}
+                  className="object-cover h-10 w-6 mr-2"
+                  height="60"
+                  src={book.cover}
+                  style={{
+                    aspectRatio: "40/60",
+                    objectFit: "cover",
+                  }}
+                  width="40"
+                />
+                <Link href={book.externalLink} target="_blank">
+                  <p className=" text-gray-700 mt-2">{bookshelf.current.map(book => `${book.title} by ${book.author}`).join(", ")}</p>
+                </Link>
+              </div>
+            ))}
           </div>
+          <hr className="my-6 border-gray-300" />
           <h2 className="text-lg my-4 leading-6 font-medium text-gray-900">{"Books I've Read"}</h2>
-          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg mt-4">
             <Table className="min-w-full divide-y divide-gray-200">
               <TableHeader>
                 <TableRow>
-                  <TableHead className="pl-4 cursor-pointer">Cover</TableHead>
                   <TableHead className="pl-4 cursor-pointer" onClick={() => onClick("title")}>
-                    Book Title{" "}
+                    Title{" "}
                     <svg
                       className=" h-5 w-5 text-gray-500 inline-block ml-2"
                       fill="none"
@@ -130,29 +147,29 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
               </TableHeader>
               <TableBody className="bg-white divide-y divide-gray-200">
                 {bookshelf.archive.sort(sortFunction).map((book, index) => (
-                    <TableRow key={index}>
+                  <TableRow key={index}>
                     <TableCell className="pl-4">
-                      <Image
-                        alt={`${book.title} cover`}
-                        className="object-cover h-16 w-10"
-                        height="60"
-                        src={book.cover}
-                        style={{
-                          aspectRatio: "40/60",
-                          objectFit: "cover",
-                        }}
-                        width="40"
-                      />
+                      <Link href={book.externalLink} target="_blank">
+                        <Image
+                          alt={`${book.title} cover`}
+                          className="object-cover h-16 w-10 inline-block mr-2"
+                          height="60"
+                          src={book.cover}
+                          style={{
+                            aspectRatio: "40/60",
+                            objectFit: "cover",
+                          }}
+                          width="40"
+                        />
+                        {book.title}
+                      </Link>
                     </TableCell>
-                      <TableCell className="pl-4">
-                        <Link href={book.externalLink} target="_blank">{book.title}</Link>
-                      </TableCell>
-                      <TableCell>{book.author}</TableCell>
-                      <TableCell>{book.rating}/10</TableCell>
-                      <TableCell>{book.start.toDateString()}</TableCell>
-                      <TableCell>{book.end.toDateString()}</TableCell>
-                    </TableRow>
-                  ))}
+                    <TableCell className="pl-4">{book.author}</TableCell>
+                    <TableCell className="pl-4">{book.rating}/10</TableCell>
+                    <TableCell className="pl-4">{book.start.toDateString()}</TableCell>
+                    <TableCell className="pl-4">{book.end.toDateString()}</TableCell>
+                  </TableRow>
+                ))}
               </TableBody>
             </Table>
           </div>

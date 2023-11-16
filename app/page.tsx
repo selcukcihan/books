@@ -19,6 +19,8 @@ function getData(): Bookshelf {
   const current = rawData.current.map((book: any) => ({
     title: book.title,
     author: book.author,
+    externalLink: book.externalLink,
+    cover: book.cover,
     start: new Date(Date.parse(book.start)),
   }))
   return {

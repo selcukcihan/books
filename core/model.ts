@@ -3,13 +3,12 @@ export interface OngoingBook {
   author: string
   start: Date
   cover: string
+  externalLink: string
 } 
 
 export interface Book extends OngoingBook {
   rating: number
   end: Date
-  externalLink: string
-  cover: string
 }
 
 export interface Bookshelf {
