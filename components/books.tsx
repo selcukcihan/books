@@ -28,8 +28,8 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
     }
   }
   return (
-    <div className="min-h-screen bg-[#f3f4f6]">
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#f3f4f6] flex flex-col">
+      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
         <div className="px-4 py-6 sm:px-0">
           <div className="mb-6">
             <h1 className="text-lg leading-6 font-medium text-gray-900">{"I'm currently reading"}</h1>
@@ -157,6 +157,11 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
           </div>
         </div>
       </div>
+      <footer className="bg-gray-800 text-white py-4 px-6 text-center">
+        <a className="hover:text-blue-500" href="https://github.com/selcukcihan/books" rel="noopener noreferrer" target="_blank">
+          Check this project on GitHub
+        </a>
+      </footer>
     </div>
   )
 }
