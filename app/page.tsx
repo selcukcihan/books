@@ -2,27 +2,33 @@ import { parse } from 'yaml'
 import fs from 'fs'
 import { Bookshelf } from '../core/model'
 import BooksComponent from '@/components/books'
-import Head from 'next/head'
-import { Title, Description } from '../core/meta'
+import { Title } from '../core/meta'
 
 const bookshelf = getData()
-const metaDescription = Description + `Currently reading ${bookshelf.current[0].title} by ${bookshelf.current[0].author}`
+const metaDescription = `I'm currently reading ${bookshelf.current[0].title} by ${bookshelf.current[0].author}`
 
 export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: Title,
-    site: '@scihan',
     description: metaDescription,
+    siteId: '134182720',
     creator: '@scihan',
+    creatorId: '134182720',
     images: [`https://books.selcukcihan.com${bookshelf.current[0].cover}`],
   },
   openGraph: {
+    siteName: Title,
     title: Title,
     type: 'website',
     url: 'https://books.selcukcihan.com',
     description: metaDescription,
-    images: [`https://books.selcukcihan.com${bookshelf.current[0].cover}`],
+    images: [{
+      url: `https://books.selcukcihan.com${bookshelf.current[0].cover}`,
+      width: 1000,
+      height: 1304,
+      alt: Title,
+    }],
   },
 }
 
