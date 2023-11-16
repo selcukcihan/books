@@ -33,7 +33,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
             <h1 className="text-lg leading-6 font-medium text-gray-900">{"I'm currently reading these books:"}</h1>
             <p className=" text-gray-700 mt-2">{bookshelf.current.map(book => `${book.title} by ${book.author}`).join(", ")}</p>
           </div>
-          <h2 className="text-lg leading-6 font-medium text-gray-900">{"Books I've Read"}</h2>
+          <h2 className="text-lg my-4 leading-6 font-medium text-gray-900">{"Books I've Read"}</h2>
           <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
             <Table className="min-w-full divide-y divide-gray-200">
               <TableHeader>
