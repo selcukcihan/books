@@ -6,6 +6,8 @@
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 import { Bookshelf } from "../core/model"
 import { useState } from "react"
+import Link from "next/link"
+import Image from 'next/image'
 
 export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
   const [sortColumn, setSortColumn] = useState("start")
@@ -38,6 +40,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
             <Table className="min-w-full divide-y divide-gray-200">
               <TableHeader>
                 <TableRow>
+                  <TableHead className="pl-4 cursor-pointer">Cover</TableHead>
                   <TableHead className="pl-4 cursor-pointer" onClick={() => onClick("title")}>
                     Book Title{" "}
                     <svg
@@ -128,7 +131,22 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
               <TableBody className="bg-white divide-y divide-gray-200">
                 {bookshelf.archive.sort(sortFunction).map((book, index) => (
                     <TableRow key={index}>
-                      <TableCell className="pl-4">{book.title}</TableCell>
+                    <TableCell className="pl-4">
+                      <Image
+                        alt={`${book.title} cover`}
+                        className="object-cover h-16 w-10"
+                        height="60"
+                        src={book.cover}
+                        style={{
+                          aspectRatio: "40/60",
+                          objectFit: "cover",
+                        }}
+                        width="40"
+                      />
+                    </TableCell>
+                      <TableCell className="pl-4">
+                        <Link href={book.externalLink} target="_blank">{book.title}</Link>
+                      </TableCell>
                       <TableCell>{book.author}</TableCell>
                       <TableCell>{book.rating}/10</TableCell>
                       <TableCell>{book.start.toDateString()}</TableCell>
@@ -143,4 +161,3 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
     </div>
   )
 }
-

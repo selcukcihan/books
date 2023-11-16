@@ -3,7 +3,8 @@ current:
     title: Clean Architecture
     author: Robert C. Martin
     start: 2023-11-13
-
+    externalLink: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
+    cover: /covers/clean_architecture.jpg
 archive:
   -
     title: Deep Work
@@ -11,21 +12,29 @@ archive:
     rating: 7
     start: 2023-11-05
     end: 2023-11-14
+    externalLink: https://www.google.com/search?q=%22deep+work%22+by+%22cal+newport%22
+    cover: /covers/deep_work.jpg
   -
     title: Kırmadan İncitmeden
     author: Taha Kılınç
     rating: 5
     start: 2023-10-27
     end: 2023-10-08
+    externalLink: https://www.amazon.com.tr/Kırmadan-İncitmeden-Taha-Kılınç/dp/6058245362
+    cover: /covers/kirmadan_incitmeden.jpg
   -
     title: Kudüs Yazıları
     author: Taha Kılınç
     rating: 8
     start: 2023-10-22
     end: 2023-10-29
+    externalLink: https://www.amazon.com.tr/Kudüs-Yazıları-Taha-Kılınç/dp/6058245397
+    cover: /covers/kudus_yazilari.jpg
   -
-    title: Atomik Alışkanlıklar
+    title: Atomic Habits
     author: James Clear
     rating: 7
     start: 2023-10-11
     end: 2023-10-21
+    externalLink: https://jamesclear.com/atomic-habits
+    cover: /covers/atomic_habits.jpg
