@@ -149,7 +149,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                     </TableCell>
                     <TableCell className="pl-4">{book.author}</TableCell>
                     <TableCell className="pl-4">{book.rating}/10</TableCell>
-                    <TableCell className="pl-4">{book.end.toDateString()}</TableCell>
+                    <TableCell className="pl-4">{book.end.toLocaleDateString('en-GB')}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
