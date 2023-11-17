@@ -161,6 +161,12 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
         <a className="hover:text-blue-500" href="https://github.com/selcukcihan/books" rel="noopener noreferrer" target="_blank">
           Check this project on GitHub
         </a>
+        <p className="mt-2">
+          Generated using{" "}
+          <a className="text-blue-500 hover:underline" href="https://v0.dev/r/HoHFHYnagmd" rel="noopener noreferrer" target="_blank">
+            v0
+          </a>
+        </p>
       </footer>
     </div>
   )
