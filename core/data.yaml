@@ -1,11 +1,19 @@
 current:
   -
+    title: Made to Stick
+    author: Chip Heath, Dan Heath
+    start: 2023-11-20
+    externalLink: https://www.amazon.co.uk/dp/B0031RS2XG
+    cover: /covers/made_to_stick.jpg
+archive:
+  -
     title: Clean Architecture
     author: Robert C. Martin
+    rating: 6
     start: 2023-11-13
+    end: 2023-11-18
     externalLink: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
     cover: /covers/clean_architecture.jpg
-archive:
   -
     title: Deep Work
     author: Cal Newport

@@ -29,12 +29,18 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
   }
   return (
     <div className="min-h-screen bg-[#f3f4f6] flex flex-col">
+      <div className="bg-[#1c2938] text-white py-12 px-6 text-center mb-6">
+        <h1 className="text-4xl font-bold">Welcome to My Bookshelf</h1>
+        <p className="text-lg mt-4 mx-auto max-w-prose">
+          {"Discover the books I'm currently reading, the ones I've read and my reviews on them."}
+        </p>
+      </div>
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
         <div className="px-4 py-6 sm:px-0">
           <div className="mb-6">
             <h1 className="text-lg leading-6 font-medium text-gray-900">{"I'm currently reading"}</h1>
             {bookshelf.current.map((book, index) => (
-              <div key={index} className="flex items-center mt-2 text-lg text-gray-700">
+              <div key={index} className="flex items-center mt-2 text-lg text-gray-700 ">
                 <Image
                   alt={`${book.title} cover`}
                   className="object-cover h-10 w-6 mr-2"
@@ -47,7 +53,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                   width="40"
                 />
                 <Link href={book.externalLink} target="_blank">
-                  <p className=" text-gray-700 mt-2">{bookshelf.current.map(book => `${book.title} by ${book.author}`).join(", ")}</p>
+                  <p className=" text-gray-700 mt-2 hover:text-blue-500">{bookshelf.current.map(book => `${book.title} by ${book.author}`).join(", ")}</p>
                 </Link>
               </div>
             ))}
@@ -158,10 +164,19 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
         </div>
       </div>
       <footer className="bg-gray-800 text-white py-4 px-6 text-center">
-        <a className="hover:text-blue-500" href="https://github.com/selcukcihan/books" rel="noopener noreferrer" target="_blank">
-          Check this project on GitHub
-        </a>
-        <p className="mt-2">
+        <Link
+          className="hover:text-blue-500"
+          href="https://www.goodreads.com/review/list/171677638"
+          target="_blank"
+          >
+          <p><IconBookopen className="h-5 w-5 text-gray-500 inline-block mr-2" />Check my Goodreads account</p>
+        </Link>
+        <p className="mt-2 text-xs">
+          <a className="hover:text-blue-500" href="https://github.com/selcukcihan/books" rel="noopener noreferrer" target="_blank">
+            GitHub Repo
+          </a>
+        </p>
+        <p className="mt-2 text-xs">
           Generated using{" "}
           <a className="text-blue-500 hover:underline" href="https://v0.dev/r/HoHFHYnagmd" rel="noopener noreferrer" target="_blank">
             v0
@@ -169,5 +184,25 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
         </p>
       </footer>
     </div>
+  )
+}
+
+function IconBookopen(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+    </svg>
   )
 }
