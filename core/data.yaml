@@ -1,11 +1,19 @@
 current:
   -
+    title: Radical Candor
+    author: Kim Scott
+    start: 2023-11-28
+    externalLink: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375
+    cover: /covers/radical_candor.jpg
+archive:
+  -
     title: Made to Stick
     author: Chip Heath, Dan Heath
+    rating: 8
     start: 2023-11-20
+    end: 2023-11-27
     externalLink: https://www.amazon.co.uk/dp/B0031RS2XG
     cover: /covers/made_to_stick.jpg
-archive:
   -
     title: Clean Architecture
     author: Robert C. Martin
