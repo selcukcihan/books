@@ -1,11 +1,19 @@
 current:
   -
+    title: Don't Make Me Think
+    author: Steve Krug
+    start: 2023-12-09
+    externalLink: https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515
+    cover: /covers/dont_make_me_think.jpg
+archive:
+  -
     title: Radical Candor
     author: Kim Scott
+    rating: 8
     start: 2023-11-28
+    end: 2023-12-08
     externalLink: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375
     cover: /covers/radical_candor.jpg
-archive:
   -
     title: Made to Stick
     author: Chip Heath, Dan Heath
