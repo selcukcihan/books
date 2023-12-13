@@ -124,7 +124,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
               </TableHeader>
               <TableBody className="bg-white divide-y divide-gray-200">
                 {bookshelf.archive.sort(sortFunction).map((book, index) => (
-                  <TableRow key={index} onClick={() => window.open()}>
+                  <TableRow key={index}>
                     <TableCell className="pl-4">
                       <Link href={book.externalLink} target="_blank">
                         <Image
