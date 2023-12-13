@@ -63,7 +63,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
             ))}
           </div>
           <hr className="my-6 border-gray-300" />
-          <h2 className="text-lg my-4 leading-6 font-medium text-gray-900">{"Books I've Read"}</h2>
+          <h2 className="text-xl my-4 leading-6 text-center text-gray-900">{"Books I've Read"}</h2>
           <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg mt-4">
             <Table className="min-w-full divide-y divide-gray-200">
               <TableHeader>
