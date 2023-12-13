@@ -1,11 +1,19 @@
 current:
   -
+    title: The Elements of Style
+    author: William Strunk Jr., E.B. White
+    start: 2023-12-13
+    externalLink: https://www.amazon.com.tr/Elements-Style-B-White/dp/0205313426
+    cover: /covers/elements_of_style.jpg
+archive:
+  -
     title: Don't Make Me Think
     author: Steve Krug
+    rating: 5
     start: 2023-12-09
+    end: 2023-12-13
     externalLink: https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515
     cover: /covers/dont_make_me_think.jpg
-archive:
   -
     title: Radical Candor
     author: Kim Scott
