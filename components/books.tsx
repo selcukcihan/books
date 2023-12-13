@@ -27,6 +27,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
       return a[sortColumn] < b[sortColumn] ? -1 : 1
     }
   }
+
   return (
     <div className="min-h-screen bg-[#f3f4f6] flex flex-col">
       <div className="bg-[#1c2938] text-white py-12 px-6 text-center mb-6">
@@ -38,7 +39,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
         <div className="px-4 py-6 sm:px-0">
           <div className="mb-6">
-            <h1 className="text-xl leading-6 font-medium text-gray-900">{"I'm currently reading"}</h1>
+            <h1 className="text-xl leading-6 font-medium text-gray-900">{"Currently reading"}</h1>
             {bookshelf.current.map((book, index) => (
               <div key={index} className="flex items-center mt-2 text-xl text-gray-700 ">
                 <Image
@@ -67,6 +68,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
             <Table className="min-w-full divide-y divide-gray-200">
               <TableHeader>
                 <TableRow>
+                  <TableHead className="pl-4 cursor-pointer" />
                   <TableHead className="pl-4 cursor-pointer" onClick={() => onClick("title")}>
                     Title{" "}
                     <svg
@@ -118,23 +120,6 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                       <path d="m6 9 6 6 6-6" />
                     </svg>
                   </TableHead>
-                  <TableHead className="cursor-pointer" onClick={() => onClick("end")}>
-                    Date{" "}
-                    <svg
-                      className=" h-5 w-5 text-gray-500 inline-block ml-2"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody className="bg-white divide-y divide-gray-200">
@@ -144,7 +129,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                       <Link href={book.externalLink} target="_blank">
                         <Image
                           alt={`${book.title} cover`}
-                          className="object-cover h-16 w-10 inline-block mr-2"
+                          className="object-cover h-12 w-8 inline-block mr-2"
                           height="60"
                           src={book.cover}
                           style={{
@@ -153,12 +138,11 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                           }}
                           width="40"
                         />
-                        {book.title}
                       </Link>
                     </TableCell>
+                    <TableCell className="pl-4">{book.title}</TableCell>
                     <TableCell className="pl-4">{book.author}</TableCell>
                     <TableCell className="pl-4">{book.rating}/10</TableCell>
-                    <TableCell className="pl-4">{book.end.toLocaleDateString('en-GB')}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
