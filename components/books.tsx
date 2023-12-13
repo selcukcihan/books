@@ -33,15 +33,15 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
       <div className="bg-[#1c2938] text-white py-12 px-6 text-center mb-6">
         <h1 className="text-4xl font-bold">Welcome to My Bookshelf</h1>
         <p className="text-lg mt-4 mx-auto max-w-prose">
-          {"Discover the books I'm currently reading, the ones I've read and my reviews on them."}
+          {"Discover the books I've been reading :)"}
         </p>
       </div>
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
         <div className="px-4 py-6 sm:px-0">
           <div className="mb-6">
-            <h1 className="text-xl leading-6 font-medium text-gray-900">{"Currently reading"}</h1>
+            <h1 className="text-center text-xl leading-6 text-gray-900">{"I'm currently reading"}</h1>
             {bookshelf.current.map((book, index) => (
-              <div key={index} className="flex items-center mt-2 text-xl text-gray-700 ">
+              <div key={index} className="flex items-center mt-2 text-2xl text-gray-700 ">
                 <Image
                   alt={`${book.title} cover`}
                   className="object-cover h-16 w-10 mr-2"
@@ -55,7 +55,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                 />
                 <Link href={book.externalLink} target="_blank">
                   <p className=" text-gray-700 mt-2 hover:text-blue-500">
-                    <span className="font-bold">{book.title}</span>
+                    <span className="font-bold">{book.title}</span><br/>
                     <span className="text-lg"> by {book.author}</span>
                   </p>
                 </Link>
@@ -124,12 +124,12 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
               </TableHeader>
               <TableBody className="bg-white divide-y divide-gray-200">
                 {bookshelf.archive.sort(sortFunction).map((book, index) => (
-                  <TableRow key={index}>
+                  <TableRow key={index} onClick={() => window.open()}>
                     <TableCell className="pl-4">
                       <Link href={book.externalLink} target="_blank">
                         <Image
                           alt={`${book.title} cover`}
-                          className="object-cover h-12 w-8 inline-block mr-2"
+                          className="object-cover h-12 w-10 sm:w-8 inline-block mr-2"
                           height="60"
                           src={book.cover}
                           style={{
