@@ -38,12 +38,12 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
         <div className="px-4 py-6 sm:px-0">
           <div className="mb-6">
-            <h1 className="text-lg leading-6 font-medium text-gray-900">{"I'm currently reading"}</h1>
+            <h1 className="text-xl leading-6 font-medium text-gray-900">{"I'm currently reading"}</h1>
             {bookshelf.current.map((book, index) => (
-              <div key={index} className="flex items-center mt-2 text-lg text-gray-700 ">
+              <div key={index} className="flex items-center mt-2 text-xl text-gray-700 ">
                 <Image
                   alt={`${book.title} cover`}
-                  className="object-cover h-10 w-6 mr-2"
+                  className="object-cover h-16 w-10 mr-2"
                   height="60"
                   src={book.cover}
                   style={{
@@ -53,7 +53,10 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                   width="40"
                 />
                 <Link href={book.externalLink} target="_blank">
-                  <p className=" text-gray-700 mt-2 hover:text-blue-500">{bookshelf.current.map(book => `${book.title} by ${book.author}`).join(", ")}</p>
+                  <p className=" text-gray-700 mt-2 hover:text-blue-500">
+                    <span className="font-bold">{book.title}</span>
+                    <span className="text-lg"> by {book.author}</span>
+                  </p>
                 </Link>
               </div>
             ))}
