@@ -1,11 +1,19 @@
 current:
   -
+    title: The DevOps Handbook
+    author: Gene Kim, Patrick Debois, John Willis, Jez Humble
+    start: 2023-12-20
+    externalLink: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002
+    cover: /covers/the_devops_handbook.jpg
+archive:
+  -
     title: The Elements of Style
     author: William Strunk Jr., E.B. White
+    rating: 7
     start: 2023-12-13
+    end: 2023-12-19
     externalLink: https://www.amazon.com.tr/Elements-Style-B-White/dp/0205313426
     cover: /covers/elements_of_style.jpg
-archive:
   -
     title: Don't Make Me Think
     author: Steve Krug
