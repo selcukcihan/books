@@ -1,11 +1,19 @@
 current:
   -
+    title: The Phoenix Project
+    author: Gene Kim, Kevin Behr, George Spafford
+    start: 2024-01-12
+    externalLink: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B078Y98RG8
+    cover: /covers/the_phoenix_project.jpg
+archive:
+  -
     title: The DevOps Handbook
     author: Gene Kim, Patrick Debois, John Willis, Jez Humble
     start: 2023-12-20
     externalLink: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002
     cover: /covers/the_devops_handbook.jpg
-archive:
+    end: 2024-01-11
+    rating: 8
   -
     title: The Elements of Style
     author: William Strunk Jr., E.B. White
