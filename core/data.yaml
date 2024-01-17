@@ -1,11 +1,19 @@
 current:
   -
+    title: The Manager's Path
+    author: Camille Fournier
+    start: 2024-01-17
+    externalLink: https://www.amazon.com/gp/product/B06XP3GJ7F
+    cover: /covers/the_managers_path.jpg
+archive:
+  -
     title: The Phoenix Project
     author: Gene Kim, Kevin Behr, George Spafford
     start: 2024-01-12
     externalLink: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B078Y98RG8
     cover: /covers/the_phoenix_project.jpg
-archive:
+    end: 2024-01-17
+    rating: 10
   -
     title: The DevOps Handbook
     author: Gene Kim, Patrick Debois, John Willis, Jez Humble
