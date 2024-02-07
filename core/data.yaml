@@ -1,11 +1,19 @@
 current:
   -
+    title: The Subtle Art of Not Giving a F*ck
+    author: Mark Manson
+    start: 2024-02-07
+    externalLink: https://www.amazon.com/gp/product/B019MMUA8S
+    cover: /covers/subtle_art_of_not_giving.jpg
+archive:
+  -
     title: The Manager's Path
     author: Camille Fournier
     start: 2024-01-17
     externalLink: https://www.amazon.com/gp/product/B06XP3GJ7F
     cover: /covers/the_managers_path.jpg
-archive:
+    end: 2024-02-06
+    rating: 5
   -
     title: The Phoenix Project
     author: Gene Kim, Kevin Behr, George Spafford
