@@ -1,11 +1,19 @@
 current:
   -
+    title: Why We Sleep
+    author: Matthew Walker
+    start: 2024-02-11
+    externalLink: https://www.amazon.com/gp/product/B06Y649387
+    cover: /covers/why_we_sleep.jpg
+archive:
+  -
     title: The Subtle Art of Not Giving a F*ck
     author: Mark Manson
     start: 2024-02-07
     externalLink: https://www.amazon.com/gp/product/B019MMUA8S
     cover: /covers/subtle_art_of_not_giving.jpg
-archive:
+    end: 2024-02-10
+    rating: 6
   -
     title: The Manager's Path
     author: Camille Fournier
