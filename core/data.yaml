@@ -1,11 +1,25 @@
 current:
   -
+    title: The Tipping Point
+    author: Malcolm Gladwell
+    start: 2024-02-26
+    externalLink: https://www.amazon.com/gp/product/0316346624
+    cover: /covers/the_tipping_point.jpg
+  -
+    title: Algernon'a Çiçekler
+    author: Daniel Keyes, Handan Ünlü Haktanır
+    start: 2024-02-26
+    externalLink: https://www.amazon.com.tr/gp/product/6054629867
+    cover: /covers/algernona_cicekler.jpg
+archive:
+  -
     title: Why We Sleep
     author: Matthew Walker
     start: 2024-02-11
     externalLink: https://www.amazon.com/gp/product/B06Y649387
     cover: /covers/why_we_sleep.jpg
-archive:
+    end: 2024-02-25
+    rating: 10
   -
     title: The Subtle Art of Not Giving a F*ck
     author: Mark Manson
