@@ -1,17 +1,27 @@
 current:
   -
+    title: How to Win Friends and Influence People
+    author: Dale Carnegie
+    start: 2024-03-16
+    externalLink: https://www.amazon.com/How-Win-Friends-Influence-People-ebook/dp/B09LVWLKXB
+    cover: /covers/win_friends_influence_people.jpg
+archive:
+  -
     title: The Tipping Point
     author: Malcolm Gladwell
     start: 2024-02-26
     externalLink: https://www.amazon.com/gp/product/0316346624
     cover: /covers/the_tipping_point.jpg
+    end: 2024-03-14
+    rating: 1
   -
     title: Algernon'a Çiçekler
     author: Daniel Keyes, Handan Ünlü Haktanır
     start: 2024-02-26
     externalLink: https://www.amazon.com.tr/gp/product/6054629867
     cover: /covers/algernona_cicekler.jpg
-archive:
+    end: 2024-03-14
+    rating: 10
   -
     title: Why We Sleep
     author: Matthew Walker
