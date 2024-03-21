@@ -1,11 +1,19 @@
 current:
   -
+    title: The Quick & Easy Way to Effective Speaking
+    author: Dale Carnegie
+    start: 2024-03-21
+    externalLink: https://www.amazon.com/Quick-Easy-Way-Effective-Speaking-ebook/dp/B0849MT8SG
+    cover: /covers/quick_easy_way_to_effective_speaking.jpg
+archive:
+  -
     title: How to Win Friends and Influence People
     author: Dale Carnegie
     start: 2024-03-16
     externalLink: https://www.amazon.com/How-Win-Friends-Influence-People-ebook/dp/B09LVWLKXB
     cover: /covers/win_friends_influence_people.jpg
-archive:
+    end: 2024-03-21
+    rating: 10
   -
     title: The Tipping Point
     author: Malcolm Gladwell
