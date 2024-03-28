@@ -1,11 +1,19 @@
 current:
   -
+    title: How to Stop Worrying & Start Living
+    author: Dale Carnegie
+    start: 2024-03-28
+    externalLink: https://www.amazon.com/gp/product/B0CSKF4XNQ
+    cover: /covers/stop_worrying_start_living.jpg
+archive:
+  -
     title: The Quick & Easy Way to Effective Speaking
     author: Dale Carnegie
     start: 2024-03-21
     externalLink: https://www.amazon.com/Quick-Easy-Way-Effective-Speaking-ebook/dp/B0849MT8SG
     cover: /covers/quick_easy_way_to_effective_speaking.jpg
-archive:
+    end: 2024-03-27
+    rating: 7
   -
     title: How to Win Friends and Influence People
     author: Dale Carnegie
