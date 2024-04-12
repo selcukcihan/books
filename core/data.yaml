@@ -1,11 +1,19 @@
 current:
   -
+    title: The Lean Startup
+    author: Eric Ries
+    start: 2024-04-13
+    externalLink: https://www.amazon.com/dp/B004J4XGN6
+    cover: /covers/the_lean_startup.jpg
+archive:
+  -
     title: How to Stop Worrying & Start Living
     author: Dale Carnegie
     start: 2024-03-28
     externalLink: https://www.amazon.com/gp/product/B0CSKF4XNQ
     cover: /covers/stop_worrying_start_living.jpg
-archive:
+    end: 2024-04-12
+    rating: 1
   -
     title: The Quick & Easy Way to Effective Speaking
     author: Dale Carnegie
@@ -13,7 +21,7 @@ archive:
     externalLink: https://www.amazon.com/Quick-Easy-Way-Effective-Speaking-ebook/dp/B0849MT8SG
     cover: /covers/quick_easy_way_to_effective_speaking.jpg
     end: 2024-03-27
-    rating: 7
+    rating: 4
   -
     title: How to Win Friends and Influence People
     author: Dale Carnegie
@@ -21,7 +29,7 @@ archive:
     externalLink: https://www.amazon.com/How-Win-Friends-Influence-People-ebook/dp/B09LVWLKXB
     cover: /covers/win_friends_influence_people.jpg
     end: 2024-03-21
-    rating: 10
+    rating: 5
   -
     title: The Tipping Point
     author: Malcolm Gladwell
@@ -37,7 +45,7 @@ archive:
     externalLink: https://www.amazon.com.tr/gp/product/6054629867
     cover: /covers/algernona_cicekler.jpg
     end: 2024-03-14
-    rating: 10
+    rating: 5
   -
     title: Why We Sleep
     author: Matthew Walker
@@ -45,7 +53,7 @@ archive:
     externalLink: https://www.amazon.com/gp/product/B06Y649387
     cover: /covers/why_we_sleep.jpg
     end: 2024-02-25
-    rating: 10
+    rating: 5
   -
     title: The Subtle Art of Not Giving a F*ck
     author: Mark Manson
@@ -53,7 +61,7 @@ archive:
     externalLink: https://www.amazon.com/gp/product/B019MMUA8S
     cover: /covers/subtle_art_of_not_giving.jpg
     end: 2024-02-10
-    rating: 6
+    rating: 3
   -
     title: The Manager's Path
     author: Camille Fournier
@@ -61,7 +69,7 @@ archive:
     externalLink: https://www.amazon.com/gp/product/B06XP3GJ7F
     cover: /covers/the_managers_path.jpg
     end: 2024-02-06
-    rating: 5
+    rating: 2
   -
     title: The Phoenix Project
     author: Gene Kim, Kevin Behr, George Spafford
@@ -69,7 +77,7 @@ archive:
     externalLink: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B078Y98RG8
     cover: /covers/the_phoenix_project.jpg
     end: 2024-01-17
-    rating: 10
+    rating: 5
   -
     title: The DevOps Handbook
     author: Gene Kim, Patrick Debois, John Willis, Jez Humble
@@ -77,11 +85,11 @@ archive:
     externalLink: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002
     cover: /covers/the_devops_handbook.jpg
     end: 2024-01-11
-    rating: 8
+    rating: 4
   -
     title: The Elements of Style
     author: William Strunk Jr., E.B. White
-    rating: 7
+    rating: 4
     start: 2023-12-13
     end: 2023-12-19
     externalLink: https://www.amazon.com.tr/Elements-Style-B-White/dp/0205313426
@@ -89,7 +97,7 @@ archive:
   -
     title: Don't Make Me Think
     author: Steve Krug
-    rating: 5
+    rating: 3
     start: 2023-12-09
     end: 2023-12-13
     externalLink: https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515
@@ -97,7 +105,7 @@ archive:
   -
     title: Radical Candor
     author: Kim Scott
-    rating: 8
+    rating: 4
     start: 2023-11-28
     end: 2023-12-08
     externalLink: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375
@@ -105,7 +113,7 @@ archive:
   -
     title: Made to Stick
     author: Chip Heath, Dan Heath
-    rating: 8
+    rating: 4
     start: 2023-11-20
     end: 2023-11-27
     externalLink: https://www.amazon.co.uk/dp/B0031RS2XG
@@ -113,7 +121,7 @@ archive:
   -
     title: Clean Architecture
     author: Robert C. Martin
-    rating: 6
+    rating: 3
     start: 2023-11-13
     end: 2023-11-18
     externalLink: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
@@ -121,7 +129,7 @@ archive:
   -
     title: Deep Work
     author: Cal Newport
-    rating: 7
+    rating: 4
     start: 2023-11-05
     end: 2023-11-14
     externalLink: https://www.google.com/search?q=%22deep+work%22+by+%22cal+newport%22
@@ -129,7 +137,7 @@ archive:
   -
     title: Kırmadan İncitmeden
     author: Taha Kılınç
-    rating: 5
+    rating: 2
     start: 2023-10-27
     end: 2023-10-08
     externalLink: https://www.amazon.com.tr/Kırmadan-İncitmeden-Taha-Kılınç/dp/6058245362
@@ -137,7 +145,7 @@ archive:
   -
     title: Kudüs Yazıları
     author: Taha Kılınç
-    rating: 8
+    rating: 4
     start: 2023-10-22
     end: 2023-10-29
     externalLink: https://www.amazon.com.tr/Kudüs-Yazıları-Taha-Kılınç/dp/6058245397
@@ -145,7 +153,7 @@ archive:
   -
     title: Atomic Habits
     author: James Clear
-    rating: 7
+    rating: 4
     start: 2023-10-11
     end: 2023-10-21
     externalLink: https://jamesclear.com/atomic-habits

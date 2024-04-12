@@ -142,7 +142,7 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
                     </TableCell>
                     <TableCell className="pl-4">{book.title}</TableCell>
                     <TableCell className="pl-4">{book.author}</TableCell>
-                    <TableCell className="pl-4">{book.rating}/10</TableCell>
+                    <TableCell className="pl-4">{book.rating}/5</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
