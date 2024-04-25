@@ -1,11 +1,19 @@
 current:
   -
+    title: Outliers
+    author: Malcolm Gladwell
+    start: 2024-04-25
+    externalLink: https://www.amazon.com/dp/0316017930
+    cover: /covers/outliers.jpg
+archive:
+  -
     title: İnsanın Anlam Arayışı
     author: Viktor E. Frankl
     start: 2024-04-21
     externalLink: https://www.amazon.com.tr/dp/6054054201
     cover: /covers/insanin_anlam_arayisi.jpg
-archive:
+    end: 2024-04-24
+    rating: 3
   -
     title: The Lean Startup
     author: Eric Ries
