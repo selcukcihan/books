@@ -1,11 +1,19 @@
 current:
   -
+    title: Company of One
+    author: Paul Jarvis
+    start: 2024-04-29
+    externalLink: https://www.amazon.com/dp/1328972356
+    cover: /covers/company_of_one.jpg
+archive:
+  -
     title: Outliers
     author: Malcolm Gladwell
     start: 2024-04-25
     externalLink: https://www.amazon.com/dp/0316017930
     cover: /covers/outliers.jpg
-archive:
+    end: 2024-05-02
+    rating: 2
   -
     title: İnsanın Anlam Arayışı
     author: Viktor E. Frankl

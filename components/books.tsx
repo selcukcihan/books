@@ -35,6 +35,9 @@ export default function Component({ bookshelf }: { bookshelf: Bookshelf }) {
         <p className="text-lg mt-4 mx-auto max-w-prose">
           {"Discover the books I've been reading :)"}
         </p>
+        <p className="text-sm mt-4 mx-auto max-w-prose text-gray-300">
+          {`${bookshelf.archive.length + bookshelf.current.length} books and counting...`}
+        </p>
       </div>
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
         <div className="px-4 py-6 sm:px-0">
