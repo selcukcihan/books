@@ -1,11 +1,19 @@
 current:
   -
+    title: The Psychology of Money
+    author: Morgan Housel
+    start: 2024-05-13
+    externalLink: https://www.amazon.com/dp/0857197681
+    cover: /covers/the_psychology_of_money.jpg
+archive:
+  -
     title: Company of One
     author: Paul Jarvis
     start: 2024-04-29
     externalLink: https://www.amazon.com/dp/1328972356
     cover: /covers/company_of_one.jpg
-archive:
+    end: 2024-05-12
+    rating: 1
   -
     title: Outliers
     author: Malcolm Gladwell
