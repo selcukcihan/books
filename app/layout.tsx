@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 import './globals.css'
 import { Title, Description } from '../core/meta'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: Title,
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   )
 }
