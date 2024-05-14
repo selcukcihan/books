@@ -19,34 +19,45 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Book, Bookshelf } from "../core/model"
+import { Book, Bookshelf, OngoingBook } from "../core/model"
 import BooksChart from './books-chart'
 import Image from 'next/image'
+import Link from "next/link"
+
+const ArchivedBookTile = ({ book }: { book: Book }) => (
+  <div className="flex items-center justify-between">
+    <div className="flex items-center space-x-1">
+      {[...Array(book.rating)].map((_, index) => (
+        <StarIcon key={index} className="w-5 h-5 fill-zinc-900 dark:fill-zinc-50" />
+      ))}
+      {[...Array(5 - book.rating)].map((_, index) => (
+        <StarIcon key={index + 5 - book.rating} className="w-5 h-5 fill-zinc-100 stroke-zinc-500 dark:fill-zinc-800 dark:stroke-zinc-400" />
+      ))}
+    </div>
+    {book.summary
+      ? <Button className="inline-flex h-8 items-center justify-center rounded-md bg-gray-800 px-4 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-800/80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-100/90 dark:focus-visible:ring-gray-300">
+          Summary
+        </Button>
+      : null
+    }
+  </div>
+)
 
 const Tile = ({ book }: { book: Book }) => (
   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
-    <div className="flex items-center mb-4">
-      <Image alt="Book Cover" width="640" height="640" className="w-16 h-24 rounded-md mr-4" src={book.cover} />
-      <div>
-        <h2 className="text-lg font-semibold">{book.title}</h2>
-        <p className="text-gray-500 dark:text-gray-400">{book.author}</p>
+    <Link href={book.externalLink} target="_blank">
+      <div className="flex items-center mb-4">
+        <Image alt="Book Cover" width="640" height="640" className="w-16 h-24 rounded-md mr-4" src={book.cover} />
+        <div>
+          <h2 className="text-lg font-semibold">{book.title}</h2>
+          <p className="text-gray-500 dark:text-gray-400">{book.author}</p>
+        </div>
       </div>
-    </div>
+    </Link>
     <div className="flex items-center justify-between">
-      <div className="flex items-center space-x-1">
-        {[...Array(book.rating)].map((_, index) => (
-          <StarIcon key={index} className="w-5 h-5 fill-zinc-900 dark:fill-zinc-50" />
-        ))}
-        {[...Array(5 - book.rating)].map((_, index) => (
-          <StarIcon key={index + 5 - book.rating} className="w-5 h-5 fill-zinc-100 stroke-zinc-500 dark:fill-zinc-800 dark:stroke-zinc-400" />
-        ))}
-      </div>
-      {book.summary
-        ? <Button className="inline-flex h-8 items-center justify-center rounded-md bg-gray-900 px-4 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
-            Summary
-          </Button>
-        : null
-      }
+      {book.rating
+        ? <ArchivedBookTile book={book} />
+        : <p className="text-gray-500 dark:text-gray-400">Currently reading</p>}
     </div>
   </div>
 )
@@ -68,8 +79,8 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
           </Card>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {bookshelf.archive.map((book, index) => (
-            <Tile key={index} book={book} />
+          {[...bookshelf.current, ...bookshelf.archive].map((book, index) => (
+            <Tile key={index} book={book as any} />
           ))}
         </div>
       </div>

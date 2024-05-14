@@ -36,14 +36,13 @@ export const metadata = {
 function extractMonthlyCountsForLast6Months (chartData: Book[]) {
   const now = new Date()
   const sixMonthsAgo = new Date(now)
-  sixMonthsAgo.setMonth(now.getMonth() - 6)
+  sixMonthsAgo.setMonth(now.getMonth() - 5)
   const last6Months = []
   for (let i = 0; i < 6; i++) {
     const month = new Date(sixMonthsAgo)
     month.setMonth(sixMonthsAgo.getMonth() + i)
     last6Months.push({
       name: month.toLocaleString('default', { month: 'short' }),
-      // .filter(book => book.start.getMonth() === month.getMonth())
       count: chartData.filter(book => book.start.getMonth() === month.getMonth()).length,
     })
   }
@@ -60,6 +59,7 @@ function getData(): Bookshelf {
     rating: parseInt(book.rating),
     start: new Date(Date.parse(book.start)),
     end: new Date(Date.parse(book.end)),
+    summary: book.summary,
   }))
   const current = rawData.current.map((book: any) => ({
     title: book.title,
