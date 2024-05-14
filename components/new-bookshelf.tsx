@@ -76,12 +76,12 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
         </div>
         <div className="my-4 lg:my-8 flex flex-col place-items-center">
           <h2 className="text-lg font-light mb-4 text-center">{bookshelf.overview}</h2>
-          <Card className="h-full w-full max-w-2xl dark:bg-gray-300 dark:text-black">
+          <Card className="h-full w-full dark:bg-gray-300 dark:text-black">
             <CardHeader>
               <CardTitle>Books read per month</CardTitle>
             </CardHeader>
             <CardContent>
-              <BooksChart className="aspect-[9/4] lg:aspect-[9/3]" bookshelf={bookshelf} />
+              <BooksChart className="aspect-[9/4] lg:aspect-[9/2]" bookshelf={bookshelf} />
             </CardContent>
           </Card>
         </div>

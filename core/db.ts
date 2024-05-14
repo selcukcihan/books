@@ -34,11 +34,12 @@ export const metadata = {
 // This method iterates over chartData and counts the number of books read in the last 6 months
 // It returns an array of { month: string, count: number } objects, ordered by month
 function extractMonthlyCountsForLast6Months (chartData: Book[]) {
+  const TOTAL_MONTHS = 7
   const now = new Date()
   const sixMonthsAgo = new Date(now)
-  sixMonthsAgo.setMonth(now.getMonth() - 5)
+  sixMonthsAgo.setMonth(now.getMonth() - (TOTAL_MONTHS - 1))
   const last6Months = []
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < TOTAL_MONTHS; i++) {
     const month = new Date(sixMonthsAgo)
     month.setMonth(sixMonthsAgo.getMonth() + i)
     last6Months.push({
