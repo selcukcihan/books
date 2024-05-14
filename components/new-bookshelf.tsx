@@ -37,7 +37,7 @@ const ArchivedBookTile = ({ book }: { book: Book }) => (
     <div>
       {book.summary
         ? <Link href={book.summary} target="#blank">
-            <Button className="inline-flex h-10 lg:h-12 items-center justify-center rounded-md bg-gray-800 px-4 lg:px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-800/80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-100/90 dark:focus-visible:ring-gray-300">
+            <Button className="inline-flex h-10 items-center justify-center rounded-md bg-gray-800 px-4 lg:px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-800/80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-100/90 dark:focus-visible:ring-gray-300">
               Summary
             </Button>
           </Link>
@@ -58,7 +58,7 @@ const Tile = ({ book }: { book: Book }) => (
         </div>
       </div>
     </Link>
-    <div className="">
+    <div>
       {book.rating
         ? <ArchivedBookTile book={book} />
         : <p className="text-gray-500 dark:text-gray-400">Currently reading</p>}
