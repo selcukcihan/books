@@ -66,9 +66,12 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-950 dark:text-white">
       <div className="max-w-4xl w-full px-4 md:px-6">
-        <h1 className="text-3xl font-bold mt-8 text-center">{`My bookshelf`}</h1>
+        <div className="flex my-4 lg:my-8 justify-center items-center">
+          <BookshelfIcon className="dark:fill-white"/>
+          <h1 className="text-3xl mx-4 font-bold">{`My bookshelf`}</h1>
+        </div>
         <div className="my-4 lg:my-8 flex flex-col place-items-center">
-          <h2 className="text-lg font-light mb-4 text-center">{`A total of ${bookshelf.archive.length + bookshelf.current.length} books`}</h2>
+          <h2 className="text-lg font-light mb-4 text-center">{bookshelf.overview}</h2>
           <Card className="h-full w-full max-w-2xl dark:bg-gray-300 dark:text-black">
             <CardHeader>
               <CardTitle>Books read per month</CardTitle>
@@ -104,5 +107,11 @@ function StarIcon(props: any) {
     >
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
     </svg>
+  )
+}
+
+function BookshelfIcon(props: any) {
+  return (
+    <svg {...props} width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g id="Glyph"><path d="M32,35.002h6v-28H32Zm2-26h2v2H34Zm0,4h2v20H34Z"/><rect x="24" y="9.00195" width="6" height="12"/><polygon points="40 35.002 43.781 35.002 40 16.1 40 35.002"/><polygon points="50.58 29.002 49.38 23.002 43.419 23.002 44.619 29.002 50.58 29.002"/><rect x="24" y="23.00195" width="6" height="6"/><polygon points="46.181 7.002 40.22 7.002 43.02 21.002 48.98 21.002 46.181 7.002"/><rect x="18" y="7.00195" width="4" height="28"/><rect x="8" y="43.00195" width="2" height="14"/><rect x="54" y="43.00195" width="2" height="14"/><rect x="4" y="37.00195" width="56" height="4"/><rect x="14" y="9.00195" width="2" height="26"/><polygon points="51.78 35.002 50.98 31.002 45.019 31.002 45.819 35.002 51.78 35.002"/><rect x="24" y="31.00195" width="6" height="4"/></g></svg>
   )
 }

@@ -1,7 +1,6 @@
 'use client'
 
 import { ResponsiveBar } from "@nivo/bar"
-import { Bookshelf } from "../core/model"
 
 export default function BooksChart(props: any) {
   return (
@@ -13,7 +12,7 @@ export default function BooksChart(props: any) {
         indexBy="name"
         margin={{ top: 10, right: 0, bottom: 40, left: 40 }}
         padding={0.4}
-        colors={["#2563eb"]}
+        colors={["#4793AF"]}
         axisBottom={{
           tickSize: 0,
           tickPadding: 16,

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Raleway } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import './globals.css'
 import { Title, Description } from '../core/meta'
 
-const font = Raleway({ subsets: ["latin"] });
+const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: Title,

@@ -16,4 +16,5 @@ export interface Bookshelf {
   archive: Book[]
   current: OngoingBook[]
   chartData: { name: string, count: number }[]
+  overview: string
 }

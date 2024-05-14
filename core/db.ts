@@ -49,6 +49,21 @@ function extractMonthlyCountsForLast6Months (chartData: Book[]) {
   return last6Months
 }
 
+function monthDiff(d1: Date, d2: Date) {
+  var months;
+  months = (d2.getFullYear() - d1.getFullYear()) * 12;
+  months -= d1.getMonth();
+  months += d2.getMonth();
+  return months <= 0 ? 0 : months;
+}
+
+// This method returns a string that tells how many books were read in how many months in total
+function getOverview(archive: Book[]): string {
+  const firstBook = archive[archive.length - 1]
+  const months = monthDiff(firstBook.start, new Date())
+  return `I've read ${archive.length} books in ${months} months`
+}
+
 function getData(): Bookshelf {
   const rawData = parse(fs.readFileSync('core/data.yaml', 'utf8'))
   const archive = rawData.archive.map((book: any) => ({
@@ -73,5 +88,6 @@ function getData(): Bookshelf {
     chartData: extractMonthlyCountsForLast6Months([...archive, ...current]),
     archive,
     current,
+    overview: getOverview(archive),
   }
 }
