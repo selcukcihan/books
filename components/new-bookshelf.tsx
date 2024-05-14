@@ -81,7 +81,7 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
               <CardTitle>Books read per month</CardTitle>
             </CardHeader>
             <CardContent>
-              <BooksChart className="aspect-[9/4]" bookshelf={bookshelf} />
+              <BooksChart className="aspect-[9/4] lg:aspect-[9/3]" bookshelf={bookshelf} />
             </CardContent>
           </Card>
         </div>
