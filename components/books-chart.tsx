@@ -2,6 +2,18 @@
 
 import { ResponsiveBar } from "@nivo/bar"
 
+const getColor = (datum: any) => {
+  const tones = [
+    "#4793AF", // this won't display anyway, as the data is 0
+    "#4793AF",
+    "#3F8199",
+    "#367085",
+    "#2E5F70",
+    "#264E5C",
+  ]
+  return tones[datum.value < tones.length ? datum.value : tones.length - 1]
+}
+
 export default function BooksChart(props: any) {
   return (
     <div {...props}>
@@ -12,7 +24,8 @@ export default function BooksChart(props: any) {
         indexBy="name"
         margin={{ top: 10, right: 0, bottom: 40, left: 40 }}
         padding={0.4}
-        colors={["#4793AF"]}
+        colors={getColor}
+        colorBy="indexValue"
         axisBottom={{
           tickSize: 0,
           tickPadding: 16,
