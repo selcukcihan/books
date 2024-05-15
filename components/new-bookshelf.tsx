@@ -24,7 +24,7 @@ import { SearchableBooks } from "./searchable-books"
 
 export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-950 dark:text-white">
+    <div className="flex flex-col items-center min-h-screen bg-gray-100 dark:bg-gray-950 dark:text-white">
       <div className="max-w-4xl w-full px-4 md:px-6">
         <div className="flex my-4 lg:my-8 justify-center items-center">
           <BookshelfIcon className="dark:fill-white"/>
