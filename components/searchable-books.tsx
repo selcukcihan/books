@@ -13,11 +13,11 @@ export const SearchableBooks = ({ bookshelf }: { bookshelf: Bookshelf }) => {
 
   return (
     <>
-      <div className="mb-8 hidden lg:block">
+      <div className="mb-8">{/*To remove search for mobile: hidden lg:block */}
         <div className="relative">
           <SearchIcon className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500 dark:text-gray-400" />
           <Input
-            className="rounded-md border border-gray-200 bg-white px-8 py-2 text-sm shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-800 dark:bg-gray-800 dark:text-gray-50 dark:focus:border-primary dark:focus:ring-primary"
+            className="rounded-md border border-gray-200 bg-white px-8 py-2 text-base shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-800 dark:bg-gray-800 dark:text-gray-50 dark:focus:border-primary dark:focus:ring-primary"
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
