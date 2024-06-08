@@ -1,35 +1,10 @@
+import type { Metadata } from 'next'
 import { parse } from 'yaml'
 import fs from 'fs'
 import { Bookshelf, Book } from './model'
 import { Title } from './meta'
 
 export const bookshelf = getData()
-const metaDescription = `I'm currently reading ${bookshelf.current[0].title} by ${bookshelf.current[0].author}`
-
-export const metadata = {
-  twitter: {
-    card: 'summary_large_image',
-    title: Title,
-    description: metaDescription,
-    siteId: '134182720',
-    creator: '@scihan',
-    creatorId: '134182720',
-    images: [`https://books.selcukcihan.com${bookshelf.current[0].cover}`],
-  },
-  openGraph: {
-    siteName: Title,
-    title: Title,
-    type: 'website',
-    url: 'https://books.selcukcihan.com',
-    description: metaDescription,
-    images: [{
-      url: `https://books.selcukcihan.com${bookshelf.current[0].cover}`,
-      width: 1000,
-      height: 1304,
-      alt: Title,
-    }],
-  },
-}
 
 // This method iterates over chartData and counts the number of books read in the last 6 months
 // It returns an array of { month: string, count: number } objects, ordered by month
