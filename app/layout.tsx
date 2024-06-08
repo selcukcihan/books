@@ -8,6 +8,13 @@ const font = Nunito({ subsets: ["latin"] })
 
 const metaDescription = `I'm currently reading ${bookshelf.current[0].title} by ${bookshelf.current[0].author}`
 
+const images = [{
+  url: `https://books.selcukcihan.com${bookshelf.current[0].cover}`,
+  width: 360,
+  height: 360,
+  alt: metaDescription,
+}]
+
 export const metadata: Metadata = {
   title: Title,
   description: metaDescription,
@@ -19,7 +26,7 @@ export const metadata: Metadata = {
     description: metaDescription,
     creator: '@scihan',
     site: '@scihan',
-    images: [`https://books.selcukcihan.com${bookshelf.current[0].cover}`],
+    images,
   },
   openGraph: {
     siteName: Title,
@@ -27,12 +34,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://books.selcukcihan.com',
     description: metaDescription,
-    images: [{
-      url: `https://books.selcukcihan.com${bookshelf.current[0].cover}`,
-      width: 1000,
-      height: 1304,
-      alt: Title,
-    }],
+    images,
   },
 }
 
