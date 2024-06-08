@@ -1,11 +1,19 @@
 current:
   -
+    title: Hooked
+    author: Nir Eyal
+    start: 2024-06-08
+    externalLink: https://www.amazon.com/dp/B00LMGLXTS
+    cover: /covers/hooked.jpg
+archive:
+  -
     title: Thinking, Fast and Slow
     author: Daniel Kahneman
     start: 2024-05-16
     externalLink: https://www.amazon.com/dp/B005MJFA2W
     cover: /covers/thinking_fast_and_slow.jpg
-archive:
+    end: 2024-06-08
+    rating: 4
   -
     title: The Psychology of Money
     author: Morgan Housel
