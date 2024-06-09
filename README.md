@@ -1,6 +1,14 @@
 See it live on http://books.selcukcihan.com
 
+This is what it looks like on a dark theme
+
+![Bookshelf screenshot](./public/books_screenshot.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Data
+
+The data is parsed and pulled from [data.yaml](./core/data.yaml) file.
 
 ## Getting Started
 
