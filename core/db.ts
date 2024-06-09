@@ -1,8 +1,6 @@
-import type { Metadata } from 'next'
 import { parse } from 'yaml'
 import fs from 'fs'
 import { Bookshelf, Book } from './model'
-import { Title } from './meta'
 
 export const bookshelf = getData()
 

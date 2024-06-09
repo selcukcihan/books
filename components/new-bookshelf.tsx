@@ -21,6 +21,7 @@ import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Bookshelf } from "../core/model"
 import BooksChart from './books-chart'
 import { SearchableBooks } from "./searchable-books"
+import Link from "next/link"
 
 export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
   return (
@@ -43,6 +44,12 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
         </div>
         <SearchableBooks bookshelf={bookshelf} />
       </div>
+      <footer className="w-full mt-12 px-4 md:px-6 py-6 border-t flex justify-between items-center">
+        <p className="text-sm text-gray-500 dark:text-gray-400">&copy; {`${new Date().getFullYear()}`} Selçuk Cihan, all rights reserved.</p>
+        <Link href="https://github.com/selcukcihan/books" target="_blank" className="text-sm text-gray-500 dark:text-gray-400 hover:underline" prefetch={false}>
+          View source code on GitHub
+        </Link>
+      </footer>
     </div>
   )
 }
