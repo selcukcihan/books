@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Nunito } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 import { Title } from '../core/meta'
 import { bookshelf } from '../core/db'
@@ -46,6 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>{children}</body>
+      <GoogleAnalytics gaId="G-2WV3LSMNPZ" />
     </html>
   )
 }
