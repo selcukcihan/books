@@ -1,11 +1,19 @@
 current:
   -
+    title: Digital Minimalism
+    author: Cal Newport
+    start: 2024-06-15
+    externalLink: https://www.amazon.com/dp/B07D1G6DTF
+    cover: /covers/digital_minimalism.jpg
+archive:
+  -
     title: Hooked
     author: Nir Eyal
     start: 2024-06-08
     externalLink: https://www.amazon.com/dp/B00LMGLXTS
     cover: /covers/hooked.jpg
-archive:
+    end: 2024-06-15
+    rating: 1
   -
     title: Thinking, Fast and Slow
     author: Daniel Kahneman
