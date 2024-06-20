@@ -1,11 +1,19 @@
 current:
   -
+    title: The Design of Everyday Things
+    author: Donald A. Norman
+    start: 2024-06-21
+    externalLink: https://www.amazon.com/dp/B00E257T6C
+    cover: /covers/design_of_everyday_things.jpg
+archive:
+  -
     title: Digital Minimalism
     author: Cal Newport
     start: 2024-06-15
     externalLink: https://www.amazon.com/dp/B07D1G6DTF
     cover: /covers/digital_minimalism.jpg
-archive:
+    end: 2024-06-20
+    rating: 4
   -
     title: Hooked
     author: Nir Eyal
