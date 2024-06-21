@@ -18,6 +18,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 import { Bookshelf } from "../core/model"
 import BooksChart from './books-chart'
 import { SearchableBooks } from "./searchable-books"
@@ -31,16 +32,23 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
           <BookshelfIcon className="dark:fill-white"/>
           <h1 className="text-3xl mx-4 font-bold">{`My bookshelf`}</h1>
         </div>
-        <div className="my-4 lg:my-8 flex flex-col place-items-center">
-          <h2 className="text-lg font-light mb-4 text-center">{bookshelf.overview}</h2>
-          <Card className="h-full w-full dark:bg-gray-300 dark:text-black">
-            <CardHeader>
-              <CardTitle>Books read per month</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <BooksChart className="aspect-[9/4] lg:aspect-[9/2]" bookshelf={bookshelf} />
-            </CardContent>
-          </Card>
+        <div className="my-4 flex flex-col place-items-center">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="reading-progress">
+              <AccordionTrigger className="text-xl font-bold">Progress Chart</AccordionTrigger>
+              <AccordionContent>
+                <h2 className="text-lg font-light mb-4 text-center">{bookshelf.overview}</h2>
+                <Card className="h-full w-full dark:bg-gray-300 dark:text-black">
+                  <CardHeader>
+                    <CardTitle>Books read per month</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <BooksChart className="aspect-[9/4] lg:aspect-[9/2]" bookshelf={bookshelf} />
+                  </CardContent>
+                </Card>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
         <SearchableBooks bookshelf={bookshelf} />
       </div>
