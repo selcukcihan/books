@@ -32,10 +32,13 @@ function monthDiff(d1: Date, d2: Date) {
 }
 
 // This method returns a string that tells how many books were read in how many months in total
-function getOverview(archive: Book[]): string {
+function getOverview(archive: Book[]) {
   const firstBook = archive[archive.length - 1]
   const months = monthDiff(firstBook.start, new Date())
-  return `I've read ${archive.length} books in ${months} months`
+  return {
+    overview: `I've read ${archive.length} books in ${months} months`,
+    title: `Progress Chart (${Math.ceil(archive.length / months)} books / month)`
+  }
 }
 
 function getData(): Bookshelf {
@@ -62,6 +65,6 @@ function getData(): Bookshelf {
     chartData: extractMonthlyCountsForLast6Months([...archive, ...current]),
     archive,
     current,
-    overview: getOverview(archive),
+    ...getOverview(archive),
   }
 }

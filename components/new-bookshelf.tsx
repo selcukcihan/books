@@ -35,7 +35,7 @@ export function NewBookshelf({ bookshelf }: { bookshelf: Bookshelf }) {
         <div className="my-4 flex flex-col place-items-center">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="reading-progress">
-              <AccordionTrigger className="text-xl font-bold">Progress Chart</AccordionTrigger>
+              <AccordionTrigger className="text-xl font-bold">{bookshelf.title}</AccordionTrigger>
               <AccordionContent>
                 <h2 className="text-lg font-light mb-4 text-center">{bookshelf.overview}</h2>
                 <Card className="h-full w-full dark:bg-gray-300 dark:text-black">
