@@ -1,11 +1,19 @@
 current:
   -
+    title: Four Seasons in Japan
+    author: Nick Bradley
+    start: 2024-08-23
+    externalLink: https://www.amazon.com/dp/085752934X
+    cover: /covers/four_seasons_in_japan.jpg
+archive:
+  -
     title: The Art of Explanation
     author: Ros Atkins
     start: 2024-08-06
     externalLink: https://www.amazon.com/dp/B0C696RVL1
     cover: /covers/the_art_of_explanation.jpg
-archive:
+    end: 2024-08-23
+    rating: 5
   -
     title: System Design Interview
     author: Alex Xu
