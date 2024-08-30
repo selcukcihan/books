@@ -64,6 +64,15 @@ archive:
     end: 2024-05-16
     rating: 3
   -
+    title: Refactoring UI
+    author: Adam Wathan,  Steve Schoger
+    start: 2024-05-06
+    externalLink: https://www.refactoringui.com
+    cover: /covers/refactoring_ui.jpg
+    end: 2024-05-10
+    rating: 4
+    summary: https://blog.selcukcihan.com/web/refactoring-ui/
+  -
     title: Company of One
     author: Paul Jarvis
     start: 2024-04-29
