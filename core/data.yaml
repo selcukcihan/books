@@ -1,11 +1,19 @@
 current:
   -
+    title: Being Mortal
+    author: Atul Gawande
+    start: 2024-09-02
+    externalLink: https://www.amazon.com/dp/1781253943
+    cover: /covers/being_mortal.jpg
+archive:
+  -
     title: Four Seasons in Japan
     author: Nick Bradley
     start: 2024-08-23
     externalLink: https://www.amazon.com/dp/085752934X
     cover: /covers/four_seasons_in_japan.jpg
-archive:
+    end: 2024-09-01
+    rating: 5
   -
     title: The Art of Explanation
     author: Ros Atkins
