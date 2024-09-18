@@ -5,13 +5,15 @@ current:
     start: 2024-09-13
     externalLink: https://www.amazon.com/dp/B07DXGGDCQ
     cover: /covers/making_of_a_manager.jpg
+archive:
   -
     title: Oğullar ve Rencider Ruhlar
     author: Alper Canıgüz
     start: 2024-09-14
     externalLink: https://www.amazon.com/dp/6254491036
     cover: /covers/ogullar_ve_rencide_ruhlar.jpg
-archive:
+    end: 2024-09-18
+    rating: 5
   -
     title: "JavaScript: The Good Parts"
     author: Douglas Crockford
