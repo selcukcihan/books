@@ -1,17 +1,19 @@
 current:
   -
-    title: A'mâk-ı Hayal
-    author: Filibeli Ahmet Hilmi
-    start: 2024-09-19
-    externalLink: https://www.amazon.com/dp/6052958618
-    cover: /covers/amaki_hayal.jpg
-  -
     title: The Making of a Manager
     author: Julie Zhuo
     start: 2024-09-13
     externalLink: https://www.amazon.com/dp/B07DXGGDCQ
     cover: /covers/making_of_a_manager.jpg
 archive:
+  -
+    title: A'mâk-ı Hayal
+    author: Filibeli Ahmet Hilmi
+    start: 2024-09-19
+    externalLink: https://www.amazon.com/dp/6052958618
+    cover: /covers/amaki_hayal.jpg
+    end: 2024-10-01
+    rating: 4
   -
     title: Oğullar ve Rencider Ruhlar
     author: Alper Canıgüz
