@@ -1,5 +1,11 @@
 current:
   -
+    title: Az
+    author: Hakan Günday
+    start: 2024-10-01
+    externalLink: https://www.amazon.com/dp/605090068X
+    cover: /covers/az.jpg
+  -
     title: The Making of a Manager
     author: Julie Zhuo
     start: 2024-09-13
