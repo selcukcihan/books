@@ -1,11 +1,19 @@
 current:
   -
+    title: The Staff Engineer's Path
+    author: Tanya Reilly
+    start: 2024-10-09
+    externalLink: https://www.amazon.com/dp/B0BG16Y553
+    cover: /covers/staff_engineers_path.jpg
+archive:
+  -
     title: Az
     author: Hakan Günday
     start: 2024-10-01
     externalLink: https://www.amazon.com/dp/605090068X
     cover: /covers/az.jpg
-archive:
+    end: 2024-10-09
+    rating: 4
   -
     title: The Making of a Manager
     author: Julie Zhuo
