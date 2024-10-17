@@ -28,6 +28,7 @@ archive:
     cover: /covers/making_of_a_manager.jpg
     end: 2024-10-05
     rating: 5
+    summary: https://scihan.substack.com/p/kitap-ozeti-the-making-of-a-manager
   -
     title: A'mâk-ı Hayal
     author: Filibeli Ahmet Hilmi
@@ -76,6 +77,7 @@ archive:
     cover: /covers/the_art_of_explanation.jpg
     end: 2024-08-23
     rating: 5
+    summary: https://scihan.substack.com/p/the-art-of-explanation
   -
     title: System Design Interview
     author: Alex Xu
