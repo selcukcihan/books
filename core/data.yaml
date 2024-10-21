@@ -1,17 +1,19 @@
 current:
   -
-    title: Kan Ter ve Pikseller
-    author: Jason Schreier
-    start: 2024-10-11
-    externalLink: https://www.amazon.com/dp/6257737540
-    cover: /covers/kan_ter_pikseller.jpg
-  -
     title: The Staff Engineer's Path
     author: Tanya Reilly
     start: 2024-10-09
     externalLink: https://www.amazon.com/dp/B0BG16Y553
     cover: /covers/staff_engineers_path.jpg
 archive:
+  -
+    title: Kan Ter ve Pikseller
+    author: Jason Schreier
+    start: 2024-10-11
+    externalLink: https://www.amazon.com/dp/6257737540
+    cover: /covers/kan_ter_pikseller.jpg
+    end: 2024-10-21
+    rating: 2
   -
     title: Az
     author: Hakan Günday
