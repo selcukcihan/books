@@ -1,5 +1,11 @@
 current:
   -
+    title: Doğudan Batıya
+    author: Annemarie Schimmel
+    start: 2024-10-22
+    externalLink: https://www.amazon.com.tr/dp/6059778577
+    cover: /covers/dogudan_batiya.jpg
+  -
     title: The Staff Engineer's Path
     author: Tanya Reilly
     start: 2024-10-09
