@@ -28,7 +28,7 @@ const ArchivedBookTile = ({ book }: { book: Book }) => (
 
 export default function Tile ({ book }: { book: Book }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 flex flex-col">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 relative flex flex-col">
       <Link className="flex-1" href={book.externalLink} target="_blank">
         <div className="flex mb-4">
           <Image alt="Book Cover" width="640" height="640" className="w-16 h-24 rounded-md mr-4" src={book.cover} />

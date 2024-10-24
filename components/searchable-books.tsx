@@ -4,17 +4,24 @@ import { useState } from "react"
 import { Bookshelf } from "../core/model"
 import Tile from "./tile"
 import { Input } from "@/components/ui/input"
+import { Switch } from "@/components/ui/switch"
+import { Label } from "@/components/ui/label"
 
 export const SearchableBooks = ({ bookshelf }: { bookshelf: Bookshelf }) => {
   const [search, setSearch] = useState("")
-  const filteredBooks = [...bookshelf.current, ...bookshelf.archive].filter((book) => {
-    return (book.title + ' ' + book.author).toLowerCase().includes(search.toLowerCase())
-  })
+  const [kindleOnly, setKindleOnly] = useState(false)
+  const filteredBooks = [...bookshelf.current, ...bookshelf.archive]
+    .filter((book) => {
+      return (book.title + ' ' + book.author).toLowerCase().includes(search.toLowerCase())
+    })
+    .filter((book) => {
+      return !kindleOnly || book.kindle
+    })
 
   return (
     <>
       <div className="mb-8">{/*To remove search for mobile: hidden lg:block */}
-        <div className="relative">
+        <div className="flex flex-col md:flex-row">
           <SearchIcon className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500 dark:text-gray-400" />
           <Input
             className="rounded-md border border-gray-200 bg-white px-8 py-2 text-base shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-800 dark:bg-gray-800 dark:text-gray-50 dark:focus:border-primary dark:focus:ring-primary"
@@ -23,6 +30,14 @@ export const SearchableBooks = ({ bookshelf }: { bookshelf: Bookshelf }) => {
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search books by title or author"
           />
+          <div className="flex flex-row items-center space-x-2 w-48 md:justify-end pt-2 md:pt-0">
+            <Switch
+              id="kindle-filter"
+              checked={kindleOnly}
+              onCheckedChange={setKindleOnly}
+            />
+            <Label htmlFor="kindle-filter">Kindle only</Label>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
