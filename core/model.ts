@@ -4,6 +4,7 @@ export interface OngoingBook {
   start: Date
   cover: string
   externalLink: string
+  kindle: boolean
 } 
 
 export interface Book extends OngoingBook {

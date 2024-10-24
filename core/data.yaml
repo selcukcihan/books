@@ -5,12 +5,14 @@ current:
     start: 2024-10-22
     externalLink: https://www.amazon.com.tr/dp/6059778577
     cover: /covers/dogudan_batiya.jpg
+    kindle: False
   -
     title: The Staff Engineer's Path
     author: Tanya Reilly
     start: 2024-10-09
     externalLink: https://www.amazon.com/dp/B0BG16Y553
     cover: /covers/staff_engineers_path.jpg
+    kindle: True
 archive:
   -
     title: Kan Ter ve Pikseller
@@ -18,6 +20,7 @@ archive:
     start: 2024-10-11
     externalLink: https://www.amazon.com/dp/6257737540
     cover: /covers/kan_ter_pikseller.jpg
+    kindle: False
     end: 2024-10-21
     rating: 2
   -
@@ -26,6 +29,7 @@ archive:
     start: 2024-10-01
     externalLink: https://www.amazon.com/dp/605090068X
     cover: /covers/az.jpg
+    kindle: False
     end: 2024-10-09
     rating: 4
   -
@@ -34,6 +38,7 @@ archive:
     start: 2024-09-13
     externalLink: https://www.amazon.com/dp/B07DXGGDCQ
     cover: /covers/making_of_a_manager.jpg
+    kindle: True
     end: 2024-10-05
     rating: 5
     summary: https://scihan.substack.com/p/kitap-ozeti-the-making-of-a-manager
@@ -43,6 +48,7 @@ archive:
     start: 2024-09-19
     externalLink: https://www.amazon.com/dp/6052958618
     cover: /covers/amaki_hayal.jpg
+    kindle: False
     end: 2024-10-01
     rating: 4
   -
@@ -51,6 +57,7 @@ archive:
     start: 2024-09-14
     externalLink: https://www.amazon.com/dp/6254491036
     cover: /covers/ogullar_ve_rencide_ruhlar.jpg
+    kindle: False
     end: 2024-09-18
     rating: 5
   -
@@ -59,6 +66,7 @@ archive:
     start: 2024-09-11
     externalLink: https://www.amazon.com/dp/0596517742
     cover: /covers/javascript_good_parts.jpg
+    kindle: True
     end: 2024-09-13
     rating: 4
   -
@@ -67,6 +75,7 @@ archive:
     start: 2024-09-02
     externalLink: https://www.amazon.com/dp/1781253943
     cover: /covers/being_mortal.jpg
+    kindle: True
     end: 2024-09-11
     rating: 4
   -
@@ -75,6 +84,7 @@ archive:
     start: 2024-08-23
     externalLink: https://www.amazon.com/dp/085752934X
     cover: /covers/four_seasons_in_japan.jpg
+    kindle: False
     end: 2024-09-01
     rating: 5
   -
@@ -83,6 +93,7 @@ archive:
     start: 2024-08-06
     externalLink: https://www.amazon.com/dp/B0C696RVL1
     cover: /covers/the_art_of_explanation.jpg
+    kindle: False
     end: 2024-08-23
     rating: 5
     summary: https://scihan.substack.com/p/the-art-of-explanation
@@ -92,6 +103,7 @@ archive:
     start: 2024-07-03
     externalLink: https://www.amazon.com/dp/B08CMF2CQF
     cover: /covers/system_design_interview.jpg
+    kindle: True
     end: 2024-08-08
     rating: 3
   -
@@ -100,6 +112,7 @@ archive:
     start: 2024-06-21
     externalLink: https://www.amazon.com/dp/B00E257T6C
     cover: /covers/design_of_everyday_things.jpg
+    kindle: True
     end: 2024-07-03
     rating: 5
   -
@@ -108,6 +121,7 @@ archive:
     start: 2024-06-15
     externalLink: https://www.amazon.com/dp/B07D1G6DTF
     cover: /covers/digital_minimalism.jpg
+    kindle: True
     end: 2024-06-20
     rating: 4
   -
@@ -116,6 +130,7 @@ archive:
     start: 2024-06-08
     externalLink: https://www.amazon.com/dp/B00LMGLXTS
     cover: /covers/hooked.jpg
+    kindle: True
     end: 2024-06-15
     rating: 1
   -
@@ -124,6 +139,7 @@ archive:
     start: 2024-05-16
     externalLink: https://www.amazon.com/dp/B005MJFA2W
     cover: /covers/thinking_fast_and_slow.jpg
+    kindle: True
     end: 2024-06-08
     rating: 4
     summary: https://blog.selcukcihan.com/kitap/thinking-fast-and-slow/
@@ -133,6 +149,7 @@ archive:
     start: 2024-05-13
     externalLink: https://www.amazon.com/dp/0857197681
     cover: /covers/the_psychology_of_money.jpg
+    kindle: True
     end: 2024-05-16
     rating: 3
   -
@@ -141,6 +158,7 @@ archive:
     start: 2024-05-06
     externalLink: https://www.refactoringui.com
     cover: /covers/refactoring_ui.jpg
+    kindle: True
     end: 2024-05-10
     rating: 4
     summary: https://blog.selcukcihan.com/web/refactoring-ui/
@@ -150,6 +168,7 @@ archive:
     start: 2024-04-29
     externalLink: https://www.amazon.com/dp/1328972356
     cover: /covers/company_of_one.jpg
+    kindle: True
     end: 2024-05-12
     rating: 1
   -
@@ -158,6 +177,7 @@ archive:
     start: 2024-04-25
     externalLink: https://www.amazon.com/dp/0316017930
     cover: /covers/outliers.jpg
+    kindle: False
     end: 2024-05-02
     rating: 2
   -
@@ -166,6 +186,7 @@ archive:
     start: 2024-04-21
     externalLink: https://www.amazon.com.tr/dp/6054054201
     cover: /covers/insanin_anlam_arayisi.jpg
+    kindle: False
     end: 2024-04-24
     rating: 3
   -
@@ -174,6 +195,7 @@ archive:
     start: 2024-04-13
     externalLink: https://www.amazon.com/dp/B004J4XGN6
     cover: /covers/the_lean_startup.jpg
+    kindle: True
     end: 2024-04-21
     rating: 4
   -
@@ -182,6 +204,7 @@ archive:
     start: 2024-03-28
     externalLink: https://www.amazon.com/gp/product/B0CSKF4XNQ
     cover: /covers/stop_worrying_start_living.jpg
+    kindle: True
     end: 2024-04-12
     rating: 1
   -
@@ -190,6 +213,7 @@ archive:
     start: 2024-03-21
     externalLink: https://www.amazon.com/Quick-Easy-Way-Effective-Speaking-ebook/dp/B0849MT8SG
     cover: /covers/quick_easy_way_to_effective_speaking.jpg
+    kindle: True
     end: 2024-03-27
     rating: 4
   -
@@ -198,6 +222,7 @@ archive:
     start: 2024-03-16
     externalLink: https://www.amazon.com/How-Win-Friends-Influence-People-ebook/dp/B09LVWLKXB
     cover: /covers/win_friends_influence_people.jpg
+    kindle: True
     end: 2024-03-21
     rating: 5
   -
@@ -206,6 +231,7 @@ archive:
     start: 2024-02-26
     externalLink: https://www.amazon.com/gp/product/0316346624
     cover: /covers/the_tipping_point.jpg
+    kindle: True
     end: 2024-03-14
     rating: 1
   -
@@ -214,6 +240,7 @@ archive:
     start: 2024-02-26
     externalLink: https://www.amazon.com.tr/gp/product/6054629867
     cover: /covers/algernona_cicekler.jpg
+    kindle: False
     end: 2024-03-14
     rating: 5
   -
@@ -222,6 +249,7 @@ archive:
     start: 2024-02-11
     externalLink: https://www.amazon.com/gp/product/B06Y649387
     cover: /covers/why_we_sleep.jpg
+    kindle: True
     end: 2024-02-25
     rating: 5
     summary: https://blog.selcukcihan.com/kitap/why-we-sleep/
@@ -231,6 +259,7 @@ archive:
     start: 2024-02-07
     externalLink: https://www.amazon.com/gp/product/B019MMUA8S
     cover: /covers/subtle_art_of_not_giving.jpg
+    kindle: True
     end: 2024-02-10
     rating: 3
     summary: https://blog.selcukcihan.com/kitap/the-subtle-art-of-not-giving-a-fck/
@@ -240,6 +269,7 @@ archive:
     start: 2024-01-17
     externalLink: https://www.amazon.com/gp/product/B06XP3GJ7F
     cover: /covers/the_managers_path.jpg
+    kindle: True
     end: 2024-02-06
     rating: 2
   -
@@ -248,6 +278,7 @@ archive:
     start: 2024-01-12
     externalLink: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B078Y98RG8
     cover: /covers/the_phoenix_project.jpg
+    kindle: True
     end: 2024-01-17
     rating: 5
   -
@@ -256,6 +287,7 @@ archive:
     start: 2023-12-20
     externalLink: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002
     cover: /covers/the_devops_handbook.jpg
+    kindle: True
     end: 2024-01-11
     rating: 4
     summary: https://blog.selcukcihan.com/kitap/the-devops-handbook/
@@ -267,6 +299,7 @@ archive:
     end: 2023-12-19
     externalLink: https://www.amazon.com.tr/Elements-Style-B-White/dp/0205313426
     cover: /covers/elements_of_style.jpg
+    kindle: True
   -
     title: Don't Make Me Think
     author: Steve Krug
@@ -275,6 +308,7 @@ archive:
     end: 2023-12-13
     externalLink: https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515
     cover: /covers/dont_make_me_think.jpg
+    kindle: True
     summary: https://blog.selcukcihan.com/kitap/dont-make-me-think/
   -
     title: Radical Candor
@@ -284,6 +318,7 @@ archive:
     end: 2023-12-08
     externalLink: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375
     cover: /covers/radical_candor.jpg
+    kindle: True
     summary: https://blog.selcukcihan.com/kitap/radical-candor/
   -
     title: Made to Stick
@@ -293,6 +328,7 @@ archive:
     end: 2023-11-27
     externalLink: https://www.amazon.co.uk/dp/B0031RS2XG
     cover: /covers/made_to_stick.jpg
+    kindle: True
     summary: https://blog.selcukcihan.com/kitap/made-to-stick/
   -
     title: Clean Architecture
@@ -302,6 +338,7 @@ archive:
     end: 2023-11-18
     externalLink: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
     cover: /covers/clean_architecture.jpg
+    kindle: True
   -
     title: Deep Work
     author: Cal Newport
@@ -310,6 +347,7 @@ archive:
     end: 2023-11-14
     externalLink: https://www.google.com/search?q=%22deep+work%22+by+%22cal+newport%22
     cover: /covers/deep_work.jpg
+    kindle: False
   -
     title: Kırmadan İncitmeden
     author: Taha Kılınç
@@ -318,6 +356,7 @@ archive:
     end: 2023-10-08
     externalLink: https://www.amazon.com.tr/Kırmadan-İncitmeden-Taha-Kılınç/dp/6058245362
     cover: /covers/kirmadan_incitmeden.jpg
+    kindle: False
   -
     title: Kudüs Yazıları
     author: Taha Kılınç
@@ -326,6 +365,7 @@ archive:
     end: 2023-10-29
     externalLink: https://www.amazon.com.tr/Kudüs-Yazıları-Taha-Kılınç/dp/6058245397
     cover: /covers/kudus_yazilari.jpg
+    kindle: False
   -
     title: Atomic Habits
     author: James Clear
@@ -334,3 +374,4 @@ archive:
     end: 2023-10-21
     externalLink: https://jamesclear.com/atomic-habits
     cover: /covers/atomic_habits.jpg
+    kindle: False
