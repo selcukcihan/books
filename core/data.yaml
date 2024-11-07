@@ -1,5 +1,12 @@
 current:
   -
+    title: Software Engineering at Google
+    author: Titus Winters, Tom Manshreck, Hyrum Wright
+    start: 2024-11-06
+    externalLink: https://www.amazon.com/dp/B0859PF5HB
+    cover: /covers/software_engineering_at_google.jpg
+    kindle: True
+  -
     title: Doğudan Batıya
     author: Annemarie Schimmel
     start: 2024-10-22
