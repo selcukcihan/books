@@ -6,6 +6,7 @@ current:
     externalLink: https://www.amazon.com/dp/B0859PF5HB
     cover: /covers/software_engineering_at_google.jpg
     kindle: True
+archive:
   -
     title: Doğudan Batıya
     author: Annemarie Schimmel
@@ -13,7 +14,8 @@ current:
     externalLink: https://www.amazon.com.tr/dp/6059778577
     cover: /covers/dogudan_batiya.jpg
     kindle: False
-archive:
+    end: 2024-11-20
+    rating: 3
   -
     title: The Staff Engineer's Path
     author: Tanya Reilly
