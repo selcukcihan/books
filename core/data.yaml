@@ -1,12 +1,21 @@
 current:
   -
+    title: "Refactoring: Improving the Design of Existing Code"
+    author: Martin Fowler
+    start: 2024-11-26
+    externalLink: https://www.amazon.com/dp/0134757599
+    cover: /covers/refactoring_improving.jpg
+    kindle: True
+archive:
+  -
     title: Software Engineering at Google
     author: Titus Winters, Tom Manshreck, Hyrum Wright
     start: 2024-11-06
     externalLink: https://www.amazon.com/dp/B0859PF5HB
     cover: /covers/software_engineering_at_google.jpg
     kindle: True
-archive:
+    end: 2024-11-25
+    rating: 4
   -
     title: Doğudan Batıya
     author: Annemarie Schimmel
