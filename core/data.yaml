@@ -1,12 +1,21 @@
 current:
   -
+    title: A Philosophy of Software Design
+    author: John Ousterhout
+    start: 2024-11-30
+    externalLink: https://www.amazon.com/dp/173210221X
+    cover: /covers/philosophy_of_software_design.jpg
+    kindle: True
+archive:
+  -
     title: "Refactoring: Improving the Design of Existing Code"
     author: Martin Fowler
     start: 2024-11-26
     externalLink: https://www.amazon.com/dp/0134757599
     cover: /covers/refactoring_improving.jpg
     kindle: True
-archive:
+    end: 2024-11-30
+    rating: 2
   -
     title: Software Engineering at Google
     author: Titus Winters, Tom Manshreck, Hyrum Wright
