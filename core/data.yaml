@@ -1,12 +1,21 @@
 current:
   -
+    title: Show Your Work!
+    author: Austin Kleon
+    start: 2024-12-03
+    externalLink: https://www.amazon.com/dp/076117897X
+    cover: /covers/show_your_work.jpg
+    kindle: True
+archive:
+  -
     title: A Philosophy of Software Design
     author: John Ousterhout
     start: 2024-11-30
     externalLink: https://www.amazon.com/dp/173210221X
     cover: /covers/philosophy_of_software_design.jpg
     kindle: True
-archive:
+    end: 2024-12-03
+    rating: 5
   -
     title: "Refactoring: Improving the Design of Existing Code"
     author: Martin Fowler
