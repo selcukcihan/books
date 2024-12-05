@@ -1,12 +1,30 @@
 current:
   -
+    title: Zero to One
+    author: Peter Thiel
+    start: 2024-12-05
+    externalLink: https://www.amazon.com/dp/B00KHX0II4
+    cover: /covers/zero_to_one.jpg
+    kindle: True
+archive:
+  -
+    title: Steal Like an Artist
+    author: Austin Kleon
+    start: 2024-12-04
+    externalLink: https://www.amazon.com/dp/B0B5L9GMSW
+    cover: /covers/steal_like_an_artist.jpg
+    kindle: True
+    end: 2024-12-05
+    rating: 1
+  -
     title: Show Your Work!
     author: Austin Kleon
     start: 2024-12-03
     externalLink: https://www.amazon.com/dp/076117897X
     cover: /covers/show_your_work.jpg
     kindle: True
-archive:
+    end: 2024-12-04
+    rating: 2
   -
     title: A Philosophy of Software Design
     author: John Ousterhout
