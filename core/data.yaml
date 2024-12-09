@@ -1,12 +1,21 @@
 current:
   -
+    title: Make Something Wonderful
+    author: Steve Jobs
+    start: 2024-12-09
+    externalLink: https://www.amazon.com/dp/B0CVFHRB1P
+    cover: /covers/make_something_wonderful.jpg
+    kindle: True
+archive:
+  -
     title: Zero to One
     author: Peter Thiel
     start: 2024-12-05
     externalLink: https://www.amazon.com/dp/B00KHX0II4
     cover: /covers/zero_to_one.jpg
     kindle: True
-archive:
+    end: 2024-12-08
+    rating: 3
   -
     title: Steal Like an Artist
     author: Austin Kleon
