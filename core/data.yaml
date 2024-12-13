@@ -1,11 +1,28 @@
 current:
   -
+    title: Kıyamet Park
+    author: Alper Canıgüz
+    start: 2024-12-13
+    externalLink: https://www.amazon.com/dp/6254494167
+    cover: /covers/kiyamet_park.jpg
+    kindle: False
+  -
+    title: Clean Code
+    author: Robert C. Martin
+    start: 2024-12-13
+    externalLink: https://www.amazon.com/dp/B001GSTOAM
+    cover: /covers/clean_code.jpg
+    kindle: True
+archive:
+  -
     title: Cehennem Çiçeği
     author: Alper Canıgüz
     start: 2024-12-09
     externalLink: https://www.amazon.com/dp/6254490986
     cover: /covers/cehennem_cicegi.jpg
     kindle: False
+    end: 2024-12-12
+    rating: 5
   -
     title: Make Something Wonderful
     author: Steve Jobs
@@ -13,7 +30,8 @@ current:
     externalLink: https://www.amazon.com/dp/B0CVFHRB1P
     cover: /covers/make_something_wonderful.jpg
     kindle: True
-archive:
+    end: 2024-12-12
+    rating: 3
   -
     title: Zero to One
     author: Peter Thiel
