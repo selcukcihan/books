@@ -1,19 +1,28 @@
 current:
   -
+    title: Surely You're Joking, Mr. Feynman!
+    author: Richard P. Feynman
+    start: 2024-12-18
+    externalLink: https://www.amazon.com/dp/B077J7F78Z
+    cover: /covers/you_are_joking.jpg
+    kindle: True
+  # -
+  #   title: Clean Code
+  #   author: Robert C. Martin
+  #   start: 2024-12-13
+  #   externalLink: https://www.amazon.com/dp/B001GSTOAM
+  #   cover: /covers/clean_code.jpg
+  #   kindle: True
+archive:
+  -
     title: Kıyamet Park
     author: Alper Canıgüz
     start: 2024-12-13
     externalLink: https://www.amazon.com/dp/6254494167
     cover: /covers/kiyamet_park.jpg
     kindle: False
-  -
-    title: Clean Code
-    author: Robert C. Martin
-    start: 2024-12-13
-    externalLink: https://www.amazon.com/dp/B001GSTOAM
-    cover: /covers/clean_code.jpg
-    kindle: True
-archive:
+    end: 2024-12-18
+    rating: 5
   -
     title: Cehennem Çiçeği
     author: Alper Canıgüz
