@@ -1,10 +1,10 @@
 current:
   -
-    title: Surely You're Joking, Mr. Feynman!
-    author: Richard P. Feynman
-    start: 2024-12-18
-    externalLink: https://www.amazon.com/dp/B077J7F78Z
-    cover: /covers/you_are_joking.jpg
+    title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions"
+    author: Randall Munroe
+    start: 2024-01-08
+    externalLink: https://www.amazon.com/dp/B00J379DC2
+    cover: /covers/what_if.jpg
     kindle: True
   # -
   #   title: Clean Code
@@ -14,6 +14,15 @@ current:
   #   cover: /covers/clean_code.jpg
   #   kindle: True
 archive:
+  -
+    title: Surely You're Joking, Mr. Feynman!
+    author: Richard P. Feynman
+    start: 2024-12-18
+    externalLink: https://www.amazon.com/dp/B077J7F78Z
+    cover: /covers/you_are_joking.jpg
+    kindle: True
+    end: 2025-01-07
+    rating: 3
   -
     title: Kıyamet Park
     author: Alper Canıgüz
