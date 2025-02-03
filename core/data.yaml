@@ -1,11 +1,4 @@
-current:
-  -
-    title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions"
-    author: Randall Munroe
-    start: 2024-01-08
-    externalLink: https://www.amazon.com/dp/B00J379DC2
-    cover: /covers/what_if.jpg
-    kindle: True
+current: []
   # -
   #   title: Clean Code
   #   author: Robert C. Martin
@@ -14,6 +7,24 @@ current:
   #   cover: /covers/clean_code.jpg
   #   kindle: True
 archive:
+  -
+    title: "Essentialism: The Disciplined Pursuit of Less"
+    author: Greg Mckeown
+    start: 2024-01-22
+    externalLink: https://www.amazon.com/dp/B00HELB6XI
+    cover: /covers/essentialism.jpg
+    kindle: True
+    end: 2025-02-02
+    rating: 3
+  -
+    title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions"
+    author: Randall Munroe
+    start: 2024-01-08
+    externalLink: https://www.amazon.com/dp/B00J379DC2
+    cover: /covers/what_if.jpg
+    kindle: True
+    end: 2025-01-22
+    rating: 2
   -
     title: Surely You're Joking, Mr. Feynman!
     author: Richard P. Feynman
