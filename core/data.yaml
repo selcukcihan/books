@@ -1,11 +1,11 @@
-current: []
-  # -
-  #   title: Clean Code
-  #   author: Robert C. Martin
-  #   start: 2024-12-13
-  #   externalLink: https://www.amazon.com/dp/B001GSTOAM
-  #   cover: /covers/clean_code.jpg
-  #   kindle: True
+current:
+  -
+    title: Beyond Entrepreneurship 2.0
+    author: Jim Collins, Bill Lazier
+    start: 2025-02-03
+    externalLink: https://www.amazon.com/dp/B08FZLMZDZ
+    cover: /covers/be20.jpg
+    kindle: True
 archive:
   -
     title: "Essentialism: The Disciplined Pursuit of Less"
@@ -17,7 +17,7 @@ archive:
     end: 2025-02-02
     rating: 3
   -
-    title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions"
+    title: "What If?"
     author: Randall Munroe
     start: 2024-01-08
     externalLink: https://www.amazon.com/dp/B00J379DC2
