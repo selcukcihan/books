@@ -1,12 +1,21 @@
 current:
   -
+    title: "Artificial Intelligence: A Guide for Thinking Humans"
+    author: Melanie Mitchell
+    start: 2025-02-08
+    externalLink: https://www.amazon.com/dp/B07QPR8W6V
+    cover: /covers/ai_guide.jpg
+    kindle: True
+archive:
+  -
     title: Beyond Entrepreneurship 2.0
     author: Jim Collins, Bill Lazier
     start: 2025-02-03
     externalLink: https://www.amazon.com/dp/B08FZLMZDZ
     cover: /covers/be20.jpg
     kindle: True
-archive:
+    end: 2025-02-08
+    rating: 1
   -
     title: "Essentialism: The Disciplined Pursuit of Less"
     author: Greg Mckeown
