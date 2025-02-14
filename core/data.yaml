@@ -1,12 +1,22 @@
 current:
   -
+    title: The Pragmatic Programmer
+    author: David Thomas, Andrew Hunt
+    start: 2025-02-14
+    externalLink: https://www.amazon.com/dp/B07VRS84D1
+    cover: /covers/prag_prog.jpg
+    kindle: False
+archive:
+  -
     title: "Artificial Intelligence: A Guide for Thinking Humans"
     author: Melanie Mitchell
     start: 2025-02-08
     externalLink: https://www.amazon.com/dp/B07QPR8W6V
     cover: /covers/ai_guide.jpg
     kindle: True
-archive:
+    end: 2025-02-14
+    rating: 5
+    summary: https://scihan.substack.com/p/kitap-ozeti-artificial-intelligence
   -
     title: Beyond Entrepreneurship 2.0
     author: Jim Collins, Bill Lazier
