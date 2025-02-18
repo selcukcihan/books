@@ -1,5 +1,12 @@
 current:
   -
+    title: Algorithms to Live By
+    author: Brian Christian, Tom Griffiths
+    start: 2025-02-16
+    externalLink: https://www.amazon.com/dp/B015DLA0LE
+    cover: /covers/algorithms_to_live_by.jpg
+    kindle: True
+  -
     title: The Pragmatic Programmer
     author: David Thomas, Andrew Hunt
     start: 2025-02-14
