@@ -6,6 +6,7 @@ current:
     externalLink: https://www.amazon.com/dp/B015DLA0LE
     cover: /covers/algorithms_to_live_by.jpg
     kindle: True
+archive:
   -
     title: The Pragmatic Programmer
     author: David Thomas, Andrew Hunt
@@ -13,7 +14,8 @@ current:
     externalLink: https://www.amazon.com/dp/B07VRS84D1
     cover: /covers/prag_prog.jpg
     kindle: False
-archive:
+    end: 2025-03-15
+    rating: 3
   -
     title: "Artificial Intelligence: A Guide for Thinking Humans"
     author: Melanie Mitchell
