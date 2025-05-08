@@ -1,12 +1,21 @@
 current:
   -
+    title: Turnalar Güneye Uçarken
+    author: Lisa Ridzen, Yonca Soy
+    start: 2025-05-05
+    externalLink: https://www.amazon.com.tr/dp/6050849145
+    cover: /covers/turnalar.jpg
+    kindle: True
+archive:
+  -
     title: Algorithms to Live By
     author: Brian Christian, Tom Griffiths
     start: 2025-02-16
     externalLink: https://www.amazon.com/dp/B015DLA0LE
     cover: /covers/algorithms_to_live_by.jpg
     kindle: True
-archive:
+    end: 2025-04-30
+    rating: 2
   -
     title: The Pragmatic Programmer
     author: David Thomas, Andrew Hunt
@@ -38,7 +47,7 @@ archive:
   -
     title: "Essentialism: The Disciplined Pursuit of Less"
     author: Greg Mckeown
-    start: 2024-01-22
+    start: 2025-01-22
     externalLink: https://www.amazon.com/dp/B00HELB6XI
     cover: /covers/essentialism.jpg
     kindle: True
@@ -47,7 +56,7 @@ archive:
   -
     title: "What If?"
     author: Randall Munroe
-    start: 2024-01-08
+    start: 2025-01-08
     externalLink: https://www.amazon.com/dp/B00J379DC2
     cover: /covers/what_if.jpg
     kindle: True

@@ -17,7 +17,15 @@ function extractMonthlyCountsForLast6Months (chartData: Book[]) {
     month.setMonth(sixMonthsAgo.getMonth() + i)
     last6Months.push({
       name: month.toLocaleString('default', { month: 'short' }),
-      count: chartData.filter(book => book.start.getMonth() === month.getMonth()).length,
+      count: chartData.filter(book => {
+        const bookStart = book.start
+        const bookEnd = book.end || new Date() // If no end date, use current date
+        const monthStart = new Date(month.getFullYear(), month.getMonth(), 1)
+        const monthEnd = new Date(month.getFullYear(), month.getMonth() + 1, 0)
+        
+        // Check if the book's date range overlaps with this month
+        return bookStart <= monthEnd && bookEnd >= monthStart
+      }).length,
     })
   }
   return last6Months
