@@ -6,14 +6,16 @@ current:
     externalLink: https://www.amazon.com.tr/dp/0451498569
     cover: /covers/wired_to_eat.jpg
     kindle: True
+archive:
   -
     title: Turnalar Güneye Uçarken
     author: Lisa Ridzen, Yonca Soy
     start: 2025-05-05
     externalLink: https://www.amazon.com.tr/dp/6050849145
     cover: /covers/turnalar.jpg
-    kindle: True
-archive:
+    kindle: False
+    end: 2025-05-22
+    rating: 5
   -
     title: Algorithms to Live By
     author: Brian Christian, Tom Griffiths
