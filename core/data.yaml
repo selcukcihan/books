@@ -1,12 +1,21 @@
 current:
   -
+    title: 59 Seconds
+    author: Richard Wiseman
+    start: 2025-06-01
+    externalLink: https://www.amazon.com.tr/dp/0307474860
+    cover: /covers/59seconds.jpg
+    kindle: False
+archive:
+  -
     title: Wired To Eat
     author: Robb Wolf
     start: 2025-05-18
     externalLink: https://www.amazon.com.tr/dp/0451498569
     cover: /covers/wired_to_eat.jpg
     kindle: True
-archive:
+    end: 2025-06-01
+    rating: 3
   -
     title: Turnalar Güneye Uçarken
     author: Lisa Ridzen, Yonca Soy
