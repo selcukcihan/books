@@ -6,6 +6,13 @@ current:
     externalLink: https://www.amazon.com.tr/dp/1529157463
     cover: /covers/hailmary.jpg
     kindle: False
+  -
+    title: Outlive
+    author: Peter Attia
+    start: 2025-06-15
+    externalLink: https://www.amazon.com.tr/dp/1785044540
+    cover: /covers/outlive.jpg
+    kindle: False
 archive:
   -
     title: İsmail
