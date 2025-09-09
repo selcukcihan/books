@@ -1,12 +1,5 @@
 current:
   -
-    title: Project Hail Mary
-    author: Andy Weir
-    start: 2025-08-05
-    externalLink: https://www.amazon.com.tr/dp/1529157463
-    cover: /covers/hailmary.jpg
-    kindle: False
-  -
     title: Outlive
     author: Peter Attia
     start: 2025-06-15
@@ -14,6 +7,15 @@ current:
     cover: /covers/outlive.jpg
     kindle: False
 archive:
+  -
+    title: Project Hail Mary
+    author: Andy Weir
+    start: 2025-08-05
+    externalLink: https://www.amazon.com.tr/dp/1529157463
+    cover: /covers/hailmary.jpg
+    kindle: False
+    end: 2025-09-08
+    rating: 5
   -
     title: İsmail
     author: Reha Çamuroğlu
