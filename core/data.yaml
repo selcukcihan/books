@@ -1,5 +1,12 @@
 current:
   -
+    title: Deli İbrah Divanı
+    author: Ahmet Büke
+    start: 2025-09-09
+    externalLink: https://www.amazon.com.tr/dp/9750755405
+    cover: /covers/deli_ibram.jpg
+    kindle: False
+  -
     title: Outlive
     author: Peter Attia
     start: 2025-06-15
