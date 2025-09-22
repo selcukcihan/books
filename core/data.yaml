@@ -1,10 +1,10 @@
 current:
   -
-    title: Deli İbrah Divanı
-    author: Ahmet Büke
+    title: Tatar Çölü
+    author: Dino Buzzati
     start: 2025-09-09
-    externalLink: https://www.amazon.com.tr/dp/9750755405
-    cover: /covers/deli_ibram.jpg
+    externalLink: https://www.amazon.com.tr/dp/9754701253
+    cover: /covers/tatar_colu.jpg
     kindle: False
   -
     title: Outlive
@@ -14,6 +14,15 @@ current:
     cover: /covers/outlive.jpg
     kindle: False
 archive:
+  -
+    title: Deli İbram Divanı
+    author: Ahmet Büke
+    start: 2025-09-09
+    externalLink: https://www.amazon.com.tr/dp/9750755405
+    cover: /covers/deli_ibram.jpg
+    kindle: False
+    end: 2025-09-20
+    rating: 5
   -
     title: Project Hail Mary
     author: Andy Weir
