@@ -1,12 +1,5 @@
 current:
   -
-    title: Tatar Çölü
-    author: Dino Buzzati
-    start: 2025-09-09
-    externalLink: https://www.amazon.com.tr/dp/9754701253
-    cover: /covers/tatar_colu.jpg
-    kindle: False
-  -
     title: Outlive
     author: Peter Attia
     start: 2025-06-15
@@ -14,6 +7,15 @@ current:
     cover: /covers/outlive.jpg
     kindle: False
 archive:
+  -
+    title: Tatar Çölü
+    author: Dino Buzzati
+    start: 2025-09-09
+    externalLink: https://www.amazon.com.tr/dp/9754701253
+    cover: /covers/tatar_colu.jpg
+    kindle: False
+    end: 2025-09-30
+    rating: 5
   -
     title: Deli İbram Divanı
     author: Ahmet Büke
