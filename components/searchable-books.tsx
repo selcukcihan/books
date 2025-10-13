@@ -1,26 +1,57 @@
-'use client'
+"use client";
 
-import { useState } from "react"
-import { Bookshelf } from "../core/model"
-import Tile from "./tile"
-import { Input } from "@/components/ui/input"
-import { Switch } from "@/components/ui/switch"
-import { Label } from "@/components/ui/label"
+import { useState } from "react";
+import { Bookshelf } from "../core/model";
+import Tile from "./tile";
+import { Input } from "@/components/ui/input";
+import { Select } from "@/components/ui/select";
 
 export const SearchableBooks = ({ bookshelf }: { bookshelf: Bookshelf }) => {
-  const [search, setSearch] = useState("")
-  const [kindleOnly, setKindleOnly] = useState(false)
-  const filteredBooks = [...bookshelf.current, ...bookshelf.archive]
-    .filter((book) => {
-      return (book.title + ' ' + book.author).toLowerCase().includes(search.toLowerCase())
-    })
-    .filter((book) => {
-      return !kindleOnly || book.kindle
-    })
+  const [search, setSearch] = useState("");
+  const [formatFilter, setFormatFilter] = useState("all");
+
+  // Calculate counts for each category
+  const allBooks = [...bookshelf.current, ...bookshelf.archive];
+  const searchFilteredBooks = allBooks.filter((book) => {
+    return (book.title + " " + book.author)
+      .toLowerCase()
+      .includes(search.toLowerCase());
+  });
+
+  const counts = {
+    all: searchFilteredBooks.length,
+    "hard-copy": searchFilteredBooks.filter(
+      (book) => !book.kindle && !book.audible
+    ).length,
+    kindle: searchFilteredBooks.filter((book) => book.kindle).length,
+    audible: searchFilteredBooks.filter((book) => book.audible).length,
+  };
+
+  const formatOptions = [
+    { value: "all", label: `All (${counts.all})` },
+    { value: "hard-copy", label: `Hard copy (${counts["hard-copy"]})` },
+    { value: "kindle", label: `Kindle (${counts.kindle})` },
+    { value: "audible", label: `Audible (${counts.audible})` },
+  ];
+
+  const filteredBooks = searchFilteredBooks.filter((book) => {
+    switch (formatFilter) {
+      case "hard-copy":
+        return !book.kindle && !book.audible;
+      case "kindle":
+        return book.kindle;
+      case "audible":
+        return book.audible;
+      case "all":
+      default:
+        return true;
+    }
+  });
 
   return (
     <>
-      <div className="mb-8">{/*To remove search for mobile: hidden lg:block */}
+      <div className="mb-8">
+        {/*To remove search for mobile: hidden lg:block */}
         <div className="flex flex-col md:flex-row">
           <Input
             className="rounded-md border border-gray-200 bg-white px-8 py-2 text-base shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-gray-800 dark:bg-gray-800 dark:text-gray-50 dark:focus:border-primary dark:focus:ring-primary"
@@ -30,12 +61,11 @@ export const SearchableBooks = ({ bookshelf }: { bookshelf: Bookshelf }) => {
             placeholder="Search books by title or author"
           />
           <div className="flex flex-row items-center space-x-2 w-48 md:justify-end pt-2 md:pt-0">
-            <Switch
-              id="kindle-filter"
-              checked={kindleOnly}
-              onCheckedChange={setKindleOnly}
+            <Select
+              value={formatFilter}
+              onChange={(e) => setFormatFilter(e.target.value)}
+              options={formatOptions}
             />
-            <Label htmlFor="kindle-filter">Kindle only</Label>
           </div>
         </div>
       </div>
@@ -50,5 +80,5 @@ export const SearchableBooks = ({ bookshelf }: { bookshelf: Bookshelf }) => {
         </div>
       )}
     </>
-  )
-}
+  );
+};
