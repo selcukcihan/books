@@ -61,6 +61,7 @@ function getData(): Bookshelf {
     end: new Date(Date.parse(book.end)),
     summary: book.summary,
     kindle: book.kindle,
+    audible: !!book.audible,
   }))
   const current = rawData.current.map((book: any) => ({
     title: book.title,
@@ -69,6 +70,7 @@ function getData(): Bookshelf {
     cover: book.cover,
     start: new Date(Date.parse(book.start)),
     kindle: book.kindle,
+    audible: !!book.audible,
   }))
   return {
     chartData: extractMonthlyCountsForLast6Months([...archive, ...current]),

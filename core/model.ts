@@ -5,6 +5,7 @@ export interface OngoingBook {
   cover: string
   externalLink: string
   kindle: boolean
+  audible?: boolean
 } 
 
 export interface Book extends OngoingBook {

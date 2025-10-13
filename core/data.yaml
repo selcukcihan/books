@@ -8,6 +8,16 @@ current:
     kindle: False
 archive:
   -
+    title: Less Is More
+    author: Jason Hickel
+    start: 2025-10-01
+    externalLink: https://www.amazon.com.tr/dp/1786091216
+    cover: /covers/less_is_more.jpg
+    kindle: False
+    audible: True
+    end: 2025-10-09
+    rating: 5
+  -
     title: Tatar Çölü
     author: Dino Buzzati
     start: 2025-09-09
