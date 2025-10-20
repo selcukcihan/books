@@ -6,6 +6,14 @@ current:
     externalLink: https://www.amazon.com.tr/dp/1785044540
     cover: /covers/outlive.jpg
     kindle: False
+  -
+    title: This Is For Everyone
+    author: Tim Berners-Lee
+    start: 2025-10-17
+    externalLink: https://www.amazon.com.tr/dp/1035023687
+    cover: /covers/this_is_for_everyone.jpg
+    kindle: False
+    audible: True
 archive:
   -
     title: Less Is More
