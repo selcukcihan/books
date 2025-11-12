@@ -6,6 +6,7 @@ current:
     externalLink: https://www.amazon.com.tr/dp/1785044540
     cover: /covers/outlive.jpg
     kindle: False
+archive:
   -
     title: This Is For Everyone
     author: Tim Berners-Lee
@@ -14,7 +15,8 @@ current:
     cover: /covers/this_is_for_everyone.jpg
     kindle: False
     audible: True
-archive:
+    end: 2025-11-07
+    rating: 4
   -
     title: Less Is More
     author: Jason Hickel
