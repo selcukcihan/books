@@ -1,5 +1,13 @@
 current:
   -
+    title: "Nexus: A Brief History of Information Networks from the Stone Age to AI"
+    author: Yuval Noah Harari
+    start: 2025-11-17
+    externalLink: https://www.amazon.com.tr/dp/1529933617
+    cover: /covers/nexus.jpg
+    kindle: False
+    audible: True
+  -
     title: Outlive
     author: Peter Attia
     start: 2025-06-15
