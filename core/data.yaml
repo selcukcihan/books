@@ -7,6 +7,7 @@ current:
     cover: /covers/nexus.jpg
     kindle: False
     audible: True
+archive:
   -
     title: Outlive
     author: Peter Attia
@@ -14,7 +15,8 @@ current:
     externalLink: https://www.amazon.com.tr/dp/1785044540
     cover: /covers/outlive.jpg
     kindle: False
-archive:
+    end: 2025-11-21
+    rating: 3
   -
     title: This Is For Everyone
     author: Tim Berners-Lee
