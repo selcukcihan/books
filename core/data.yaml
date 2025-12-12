@@ -1,5 +1,13 @@
 current:
   -
+    title: "On Writing Well"
+    author: William Zinsser
+    start: 2025-12-12
+    externalLink: https://www.amazon.com.tr/dp/0060891548
+    cover: /covers/writing_well.jpg
+    kindle: True
+    audible: False
+  -
     title: "Nexus: A Brief History of Information Networks from the Stone Age to AI"
     author: Yuval Noah Harari
     start: 2025-11-17
