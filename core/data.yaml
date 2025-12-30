@@ -8,6 +8,15 @@ current:
     kindle: True
     audible: False
   -
+    title: "An Elegant Puzzle: Systems of Engineering Management"
+    author: Will Larson
+    start: 2025-12-27
+    externalLink: https://www.amazon.com.tr/dp/1732265186
+    cover: /covers/elegant_puzzle.jpg
+    kindle: False
+    audible: False
+archive:
+  -
     title: "Nexus: A Brief History of Information Networks from the Stone Age to AI"
     author: Yuval Noah Harari
     start: 2025-11-17
@@ -15,7 +24,8 @@ current:
     cover: /covers/nexus.jpg
     kindle: False
     audible: True
-archive:
+    end: 2025-12-27
+    rating: 2
   -
     title: Outlive
     author: Peter Attia
