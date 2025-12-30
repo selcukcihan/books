@@ -99,7 +99,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        {children}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "e3a117714faf448e82922ae198035bbe"}'
+        ></script>
+      </body>
       <GoogleAnalytics gaId="G-2WV3LSMNPZ" />
     </html>
   );
