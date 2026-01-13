@@ -1,5 +1,13 @@
 current:
   -
+    title: Taşların Anlattığı
+    author: Clara Dupont-Monod
+    start: 2026-01-10
+    externalLink: https://www.amazon.com.tr/dp/9750536371
+    cover: /covers/taslarin_anlattigi.jpg
+    kindle: False
+    audible: False
+  -
     title: Designing Data-Intensive Applications
     author: Martin Kleppmann
     start: 2026-01-03
