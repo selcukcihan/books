@@ -7,6 +7,7 @@ current:
     cover: /covers/designing_data_intensive_applications.jpg
     kindle: True
     audible: False
+archive:
   -
     title: "An Elegant Puzzle: Systems of Engineering Management"
     author: Will Larson
@@ -15,7 +16,8 @@ current:
     cover: /covers/elegant_puzzle.jpg
     kindle: False
     audible: False
-archive:
+    end: 2026-02-04
+    rating: 3
   -
     title: Taşların Anlattığı
     author: Clara Dupont-Monod
