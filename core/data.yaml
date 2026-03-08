@@ -1,5 +1,14 @@
 current:
   -
+    title: The Confidence Gap
+    author: Russ Harris
+    start: 2026-02-18
+    externalLink: https://www.amazon.com.tr/dp/1472144473
+    cover: /covers/confidence_gap.jpg
+    kindle: False
+    audible: False
+archive:
+  -
     title: Designing Data-Intensive Applications
     author: Martin Kleppmann
     start: 2026-01-03
@@ -7,7 +16,8 @@ current:
     cover: /covers/designing_data_intensive_applications.jpg
     kindle: True
     audible: False
-archive:
+    end: 2026-03-08
+    rating: 3
   -
     title: "An Elegant Puzzle: Systems of Engineering Management"
     author: Will Larson
