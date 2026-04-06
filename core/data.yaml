@@ -1,5 +1,14 @@
 current:
   -
+    title: Thinking in Systems
+    author: Donella H. Meadows
+    start: 2026-04-05
+    externalLink: https://www.amazon.com.tr/dp/1603580557
+    cover: /covers/thinking_in_systems.jpg
+    kindle: False
+    audible: False
+archive:
+  -
     title: The Confidence Gap
     author: Russ Harris
     start: 2026-02-18
@@ -7,7 +16,8 @@ current:
     cover: /covers/confidence_gap.jpg
     kindle: False
     audible: False
-archive:
+    end: 2026-04-05
+    rating: 4
   -
     title: Designing Data-Intensive Applications
     author: Martin Kleppmann
