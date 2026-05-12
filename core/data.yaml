@@ -1,5 +1,14 @@
 current:
   -
+    title: "Supercommunicators"
+    author: Charles Duhigg
+    start: 2026-05-13
+    externalLink: https://www.amazon.com.tr/dp/1847943640
+    cover: /covers/supercommunicators.jpg
+    kindle: False
+    audible: False
+archive:
+  -
     title: Thinking in Systems
     author: Donella H. Meadows
     start: 2026-04-05
@@ -7,7 +16,8 @@ current:
     cover: /covers/thinking_in_systems.jpg
     kindle: False
     audible: False
-archive:
+    end: 2026-05-12
+    rating: 5
   -
     title: The Confidence Gap
     author: Russ Harris
