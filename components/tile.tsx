@@ -56,11 +56,11 @@ export default function Tile({ book }: { book: Book }) {
             src={book.cover}
           />
           <div className="flex-1 min-w-0 relative group">
-            <h2 className="text-lg font-semibold">
+            <h2 className="text-lg font-semibold break-words">
               <span className="block">{displayTitle}</span>
             </h2>
             {isTitleTruncated && (
-              <span className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-gray-900 dark:bg-gray-700 text-white text-sm rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none z-50 whitespace-normal max-w-xs">
+              <span className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-gray-900 dark:bg-gray-700 text-white text-sm rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none z-50 whitespace-normal break-words max-w-xs">
                 {book.title}
                 <span className="absolute top-full left-4 -mt-1 border-4 border-transparent border-t-gray-900 dark:border-t-gray-700"></span>
               </span>
