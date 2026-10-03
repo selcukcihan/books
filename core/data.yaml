@@ -1,5 +1,14 @@
 current:
   -
+    title: "How Big Things Get Done"
+    author: Bent Flyvbjerg, Dan Gardner
+    start: 2026-10-02
+    externalLink: https://www.amazon.com.tr/dp/0593239512
+    cover: /covers/how_big_things_get_done.jpg
+    kindle: True
+    audible: False
+archive:
+  -
     title: "Koşmasaydım Yazamazdım"
     author: Haruki Murakami
     start: 2026-09-11
@@ -7,6 +16,8 @@ current:
     cover: /covers/kosmasaydim_yazamazdim.jpg
     kindle: False
     audible: False
+    end: 2026-10-01
+    rating: 5
   -
     title: "Kocamın Karısı"
     author: Alice Feeney
@@ -15,7 +26,8 @@ current:
     cover: /covers/kocamin_karisi.jpg
     kindle: False
     audible: False
-archive:
+    end: 2026-09-28
+    rating: 4
   -
     title: Balancing Coupling in Software Design
     author: Vlad Khononov
